@@ -3,32 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+
   <!-- ==========================================================================
-       OPTIMIZACIÓN SEO Y METADATOS
+       OPTIMIZACIÓN SEO Y METADATOS — decídelo.app
        ========================================================================== -->
-  <title>Ruleta Aleatoria Online - Tomar Decisiones y Sorteos Gratis</title>
-  <meta name="description" content="Gira la ruleta aleatoria online para tomar decisiones al azar, hacer sorteos de nombres o elegir opciones de forma rápida. Herramienta interactiva 100% gratuita.">
-  <meta name="keywords" content="ruleta aleatoria online, ruleta de nombres, tomar decisiones, ruleta online gratis, sorteo de opciones, ruleta de la fortuna">
+  <title>Decídelo.app — Toma Decisiones Aleatorias en Segundos</title>
+  <meta name="description" content="Herramientas gratuitas para tomar decisiones al azar: ruleta aleatoria, lanzar moneda, dados virtuales y más. Sin registro, sin dramas. ¡Dale al azar!">
+  <meta name="keywords" content="decidelo, ruleta aleatoria online, tomar decisiones, lanzar moneda, dados virtuales, generador aleatorio, sorteo de nombres, ruleta de la suerte">
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://grcx1.github.io/RuletaWeb/">
+  <link rel="canonical" href="https://decidelo.app/">
 
   <!-- Open Graph (Facebook / LinkedIn) -->
-  <meta property="og:title" content="Ruleta Aleatoria Online - Tomar Decisiones y Sorteos Gratis">
-  <meta property="og:description" content="Gira la ruleta aleatoria online para tomar decisiones al azar, hacer sorteos de nombres o elegir opciones de forma rápida. Herramienta interactiva 100% gratuita.">
+  <meta property="og:title" content="Decídelo.app — Toma Decisiones Aleatorias en Segundos">
+  <meta property="og:description" content="Herramientas gratuitas para tomar decisiones al azar: ruleta aleatoria, lanzar moneda, dados virtuales y más. Sin registro. ¡Dale al azar!">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://grcx1.github.io/RuletaWeb/">
-  <meta property="og:site_name" content="Ruleta Aleatoria Online">
+  <meta property="og:url" content="https://decidelo.app/">
+  <meta property="og:site_name" content="Decídelo.app">
 
   <!-- Twitter Cards -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Ruleta Aleatoria Online - Tomar Decisiones y Sorteos Gratis">
-  <meta name="twitter:description" content="Gira la ruleta aleatoria online para tomar decisiones al azar, hacer sorteos de nombres o elegir opciones de forma rápida. Herramienta interactiva 100% gratuita.">
+  <meta name="twitter:title" content="Decídelo.app — Toma Decisiones Aleatorias en Segundos">
+  <meta name="twitter:description" content="Herramientas gratuitas para decidir al azar: ruleta, moneda, dados y más. 100% gratis y sin registro.">
 
-  <!-- Fuentes tipográficas modernas -->
+  <!-- Fuentes tipográficas modernas — Carga eficiente -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
 
   <!-- ==========================================================================
        DATOS ESTRUCTURADOS SCHEMA.ORG (JSON-LD)
@@ -37,13 +37,13 @@
   {
     "@context": "https://schema.org",
     "@type": "WebApplication",
-    "name": "Ruleta Aleatoria Online",
-    "description": "Una aplicación web interactiva de ruleta aleatoria para tomar decisiones al azar. Guarda tus listas localmente mediante localStorage y gira la rueda con físicas realistas.",
-    "url": "https://grcx1.github.io/RuletaWeb/",
+    "name": "Decídelo.app",
+    "description": "Hub de herramientas de decisión aleatoria: ruleta online, lanzar moneda, dados virtuales, generador de números y más. Gratuito, privado y sin registro.",
+    "url": "https://decidelo.app/",
     "applicationCategory": "UtilityApplication",
     "operatingSystem": "All",
     "browserRequirements": "Requires JavaScript and HTML5 Canvas",
-    "softwareVersion": "1.0.0",
+    "softwareVersion": "2.0.0",
     "inLanguage": "es",
     "offers": {
       "@type": "Offer",
@@ -52,202 +52,489 @@
     },
     "author": {
       "@type": "Organization",
-      "name": "Ruleta Online Team",
-      "url": "https://grcx1.github.io/RuletaWeb/"
+      "name": "Decídelo.app",
+      "url": "https://decidelo.app/"
     }
   }
   </script>
 
   <!-- ==========================================================================
-       ESTILOS CSS3 (Variables de Color, Responsivo, Tema Oscuro y Foco TDAH)
+       ESTILOS CSS3 — DESIGN SYSTEM PREMIUM DARK MODE
        ========================================================================== -->
   <style>
-    /* variables y reset */
+    /* ==================================================================
+       VARIABLES DE DISEÑO Y RESET
+       ================================================================== */
     :root {
-      --bg-color: #0b0c10;
-      --bg-darker: #06070a;
-      --card-bg: #15161e;
-      --card-border: rgba(255, 255, 255, 0.07);
-      --text-primary: #f3f4f6;
-      --text-secondary: #9ca3af;
-      --accent: #6366f1;
-      --accent-hover: #4f46e5;
-      --accent-glow: rgba(99, 102, 241, 0.25);
+      /* Paleta oscura elegante */
+      --bg-body: #0a0a0a;
+      --bg-surface: #111113;
+      --bg-surface-alt: #161619;
+      --bg-surface-hover: #1c1c21;
+      --bg-elevated: #1f1f25;
+      --card-border: rgba(255, 255, 255, 0.06);
+      --card-border-hover: rgba(255, 255, 255, 0.12);
+
+      /* Acentos vibrantes */
+      --accent-cyan: #00e5ff;
+      --accent-purple: #b366ff;
+      --accent-gradient: linear-gradient(135deg, #00e5ff 0%, #b366ff 100%);
+      --accent-glow-cyan: rgba(0, 229, 255, 0.2);
+      --accent-glow-purple: rgba(179, 102, 255, 0.15);
+
+      /* Textos */
+      --text-primary: #f0f0f5;
+      --text-secondary: #8b8b9e;
+      --text-tertiary: #5a5a6e;
+
+      /* Otros */
       --accent-danger: #ef4444;
-      --accent-danger-hover: #dc2626;
-      
-      --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-      --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-      --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-      --shadow-glow: 0 0 20px var(--accent-glow);
+      --shadow-sm: 0 1px 3px rgba(0,0,0,0.3);
+      --shadow-md: 0 4px 12px rgba(0,0,0,0.4);
+      --shadow-lg: 0 8px 30px rgba(0,0,0,0.5);
+      --shadow-glow-cyan: 0 0 20px var(--accent-glow-cyan);
+      --shadow-glow-purple: 0 0 20px var(--accent-glow-purple);
       --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 20px;
+      --radius-xl: 28px;
     }
 
-    * {
+    /* Reset */
+    *, *::before, *::after {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
     }
 
-    body {
-      background-color: var(--bg-color);
-      color: var(--text-primary);
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      line-height: 1.5;
-      overflow-x: hidden;
-      transition: background-color 0.4s ease;
+    html {
+      scroll-behavior: smooth;
     }
 
-    /* Ocultar elementos para lectores de pantalla pero mantener accesibilidad */
+    body {
+      background-color: var(--bg-body);
+      color: var(--text-primary);
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.6;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    /* Accesibilidad: Ocultar visualmente pero mantener para lectores de pantalla */
     .sr-only {
       position: absolute;
-      width: 1px;
-      height: 1px;
-      padding: 0;
-      margin: -1px;
+      width: 1px; height: 1px;
+      padding: 0; margin: -1px;
       overflow: hidden;
-      clip: rect(0, 0, 0, 0);
+      clip: rect(0,0,0,0);
       white-space: nowrap;
       border: 0;
     }
 
-    /* Contenedor Confetti */
-    #confetti-canvas {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 100vh;
-      pointer-events: none;
-      z-index: 99;
-    }
-
-    /* Contenedores globales */
+    /* ==================================================================
+       CONTENEDORES GLOBALES
+       ================================================================== */
     .container {
-      max-width: 1100px;
+      max-width: 1200px;
       margin: 0 auto;
       padding: 0 1.5rem;
       width: 100%;
     }
 
-    /* Cabecera / Navegación */
+    .section-padding {
+      padding: 5rem 0;
+    }
+
+    /* ==================================================================
+       SISTEMA DE SCROLL-REVEAL
+       Elementos con .reveal inician ocultos y se animan al entrar en viewport.
+       ================================================================== */
+    .reveal {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+                  transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .reveal.revealed {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .reveal-scale {
+      opacity: 0;
+      transform: translateY(30px) scale(0.94);
+      transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+                  transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .reveal-scale.revealed {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+
+    /* Delays escalonados para tarjetas del hub */
+    .reveal-delay-1 { transition-delay: 0.08s; }
+    .reveal-delay-2 { transition-delay: 0.16s; }
+    .reveal-delay-3 { transition-delay: 0.24s; }
+    .reveal-delay-4 { transition-delay: 0.32s; }
+    .reveal-delay-5 { transition-delay: 0.40s; }
+    .reveal-delay-6 { transition-delay: 0.48s; }
+
+    /* Respetar preferencia de movimiento reducido */
+    @media (prefers-reduced-motion: reduce) {
+      .reveal, .reveal-scale {
+        opacity: 1;
+        transform: none;
+        transition: none;
+      }
+    }
+
+    /* ==================================================================
+       HEADER — Glassmorphism sticky
+       ================================================================== */
     header {
-      background: rgba(11, 12, 16, 0.7);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-      border-bottom: 1px solid var(--card-border);
       position: sticky;
       top: 0;
-      z-index: 40;
-      padding: 1rem 0;
+      z-index: 50;
+      background: rgba(10, 10, 10, 0.7);
+      backdrop-filter: blur(16px) saturate(1.6);
+      -webkit-backdrop-filter: blur(16px) saturate(1.6);
+      border-bottom: 1px solid var(--card-border);
+      padding: 0.85rem 0;
       transition: var(--transition);
     }
 
-    .header-container {
+    .header-inner {
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
 
-    .logo {
+    /* Logo */
+    .logo-link {
+      text-decoration: none;
       display: flex;
       align-items: center;
-      gap: 0.75rem;
+      gap: 0.6rem;
     }
 
     .logo-icon {
-      font-size: 1.75rem;
-      animation: spin-slow 20s linear infinite;
+      font-size: 1.6rem;
       display: inline-block;
+      animation: logo-float 3s ease-in-out infinite;
     }
 
-    @keyframes spin-slow {
-      from { transform: rotate(0deg); }
-      to { transform: rotate(360deg); }
+    @keyframes logo-float {
+      0%, 100% { transform: translateY(0) rotate(0deg); }
+      50% { transform: translateY(-3px) rotate(8deg); }
     }
 
-    header h1 {
+    .logo-text {
       font-family: 'Outfit', sans-serif;
       font-size: 1.35rem;
       font-weight: 800;
       letter-spacing: -0.02em;
-      background: linear-gradient(135deg, #ffffff 0%, #a5b4fc 100%);
+      background: var(--accent-gradient);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+      background-clip: text;
     }
 
-    .header-controls {
+    /* Navegación del header */
+    .header-nav {
       display: flex;
-      gap: 0.5rem;
+      align-items: center;
+      gap: 0.35rem;
     }
 
-    /* Botones de control */
-    .control-btn {
-      background: rgba(255, 255, 255, 0.04);
-      border: 1px solid rgba(255, 255, 255, 0.08);
-      border-radius: 8px;
-      color: var(--text-primary);
-      font-family: inherit;
+    .nav-link {
+      color: var(--text-secondary);
+      text-decoration: none;
       font-size: 0.85rem;
       font-weight: 500;
-      padding: 0.5rem 0.8rem;
+      padding: 0.5rem 0.75rem;
+      border-radius: var(--radius-sm);
+      transition: var(--transition);
+      display: none;
+    }
+
+    .nav-link:hover {
+      color: var(--text-primary);
+      background: rgba(255,255,255,0.05);
+    }
+
+    @media (min-width: 640px) {
+      .nav-link { display: inline-flex; }
+    }
+
+    /* Botones de control (Sonido, Foco) */
+    .control-btn {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.07);
+      border-radius: var(--radius-sm);
+      color: var(--text-primary);
+      font-family: inherit;
+      font-size: 0.8rem;
+      font-weight: 500;
+      padding: 0.45rem 0.65rem;
       cursor: pointer;
       display: flex;
       align-items: center;
-      gap: 0.4rem;
+      gap: 0.35rem;
       transition: var(--transition);
     }
 
     .control-btn:hover {
-      background: rgba(255, 255, 255, 0.09);
-      border-color: rgba(255, 255, 255, 0.15);
+      background: rgba(255, 255, 255, 0.08);
+      border-color: rgba(255, 255, 255, 0.14);
     }
 
     .control-btn:focus-visible {
-      outline: 2px solid var(--accent);
+      outline: 2px solid var(--accent-cyan);
       outline-offset: 2px;
     }
 
     .control-btn.active {
-      background: var(--accent);
-      border-color: var(--accent);
-      box-shadow: var(--shadow-glow);
+      background: rgba(0, 229, 255, 0.12);
+      border-color: rgba(0, 229, 255, 0.3);
+      color: var(--accent-cyan);
     }
 
-    /* Bloques de publicidad (Placeholders) */
+    .control-btn .btn-label {
+      display: none;
+    }
+
+    @media (min-width: 480px) {
+      .control-btn .btn-label { display: inline; }
+    }
+
+    /* ==================================================================
+       HERO SECTION
+       ================================================================== */
+    .hero {
+      position: relative;
+      padding: 6rem 0 4rem;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    /* Partículas decorativas flotantes */
+    .hero-particles {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      overflow: hidden;
+    }
+
+    .particle {
+      position: absolute;
+      border-radius: 50%;
+      opacity: 0.08;
+      animation: particle-float linear infinite;
+    }
+
+    .particle-1 {
+      width: 300px; height: 300px;
+      background: var(--accent-cyan);
+      top: -80px; left: -100px;
+      animation-duration: 18s;
+      filter: blur(80px);
+    }
+
+    .particle-2 {
+      width: 250px; height: 250px;
+      background: var(--accent-purple);
+      top: 40%; right: -80px;
+      animation-duration: 22s;
+      animation-delay: -5s;
+      filter: blur(70px);
+    }
+
+    .particle-3 {
+      width: 180px; height: 180px;
+      background: var(--accent-cyan);
+      bottom: -60px; left: 40%;
+      animation-duration: 15s;
+      animation-delay: -8s;
+      filter: blur(60px);
+      opacity: 0.06;
+    }
+
+    .particle-4 {
+      width: 120px; height: 120px;
+      background: var(--accent-purple);
+      top: 20%; left: 25%;
+      animation-duration: 20s;
+      animation-delay: -3s;
+      filter: blur(50px);
+      opacity: 0.05;
+    }
+
+    @keyframes particle-float {
+      0% { transform: translate(0, 0) rotate(0deg); }
+      25% { transform: translate(30px, -40px) rotate(90deg); }
+      50% { transform: translate(-20px, -70px) rotate(180deg); }
+      75% { transform: translate(40px, -30px) rotate(270deg); }
+      100% { transform: translate(0, 0) rotate(360deg); }
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.4rem 1rem;
+      border-radius: 999px;
+      background: rgba(0, 229, 255, 0.08);
+      border: 1px solid rgba(0, 229, 255, 0.2);
+      color: var(--accent-cyan);
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.03em;
+      margin-bottom: 1.5rem;
+      text-transform: uppercase;
+    }
+
+    .hero h1 {
+      font-family: 'Outfit', sans-serif;
+      font-size: clamp(2rem, 5.5vw, 3.4rem);
+      font-weight: 800;
+      line-height: 1.12;
+      letter-spacing: -0.03em;
+      color: #ffffff;
+      margin-bottom: 1.25rem;
+    }
+
+    .hero h1 .gradient-text {
+      background: var(--accent-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .hero-subtitle {
+      font-size: clamp(1rem, 2.2vw, 1.2rem);
+      color: var(--text-secondary);
+      line-height: 1.7;
+      max-width: 560px;
+      margin: 0 auto 2.5rem;
+      font-weight: 400;
+    }
+
+    .hero-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      padding: 0.9rem 2.2rem;
+      border-radius: 999px;
+      background: var(--accent-gradient);
+      color: #000000;
+      font-family: 'Outfit', sans-serif;
+      font-size: 1rem;
+      font-weight: 700;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      transition: var(--transition);
+      box-shadow: 0 4px 20px rgba(0, 229, 255, 0.25), 0 0 40px rgba(0, 229, 255, 0.1);
+    }
+
+    .hero-cta:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 30px rgba(0, 229, 255, 0.35), 0 0 60px rgba(0, 229, 255, 0.15);
+    }
+
+    .hero-cta:active {
+      transform: translateY(0);
+    }
+
+    .hero-cta svg {
+      width: 18px; height: 18px;
+      transition: transform 0.3s ease;
+    }
+
+    .hero-cta:hover svg {
+      transform: translateY(2px);
+    }
+
+    /* ==================================================================
+       BLOQUES DE PUBLICIDAD (Placeholders para AdSense)
+       ================================================================== */
     .ad-placeholder {
       display: flex;
       align-items: center;
       justify-content: center;
-      background-color: rgba(255, 255, 255, 0.02);
-      border: 1.5px dashed rgba(255, 255, 255, 0.06);
-      border-radius: 8px;
-      color: var(--text-secondary);
-      font-size: 0.75rem;
+      background: rgba(255, 255, 255, 0.015);
+      border: 1.5px dashed rgba(255, 255, 255, 0.05);
+      border-radius: var(--radius-md);
+      color: var(--text-tertiary);
+      font-size: 0.7rem;
       text-transform: uppercase;
-      letter-spacing: 0.08em;
-      margin: 1.5rem auto;
+      letter-spacing: 0.1em;
+      margin: 2rem auto;
       min-height: 90px;
       max-width: 728px;
-      position: relative;
     }
 
     .ad-placeholder::before {
-      content: "Publicidad / Espacio Reservado";
-      opacity: 0.4;
-      font-family: inherit;
+      content: "Espacio Publicitario";
+      opacity: 0.35;
     }
 
-    /* Grid principal - Mobile First */
-    main {
-      padding: 1rem 0 3rem 0;
-      min-height: calc(100vh - 250px);
+    /* ==================================================================
+       SECCIÓN DE LA RULETA (Herramienta Principal)
+       ================================================================== */
+    .roulette-section {
+      padding: 2rem 0 4rem;
     }
 
+    .roulette-section .section-header {
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+
+    .section-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent-cyan);
+      margin-bottom: 0.75rem;
+    }
+
+    .section-heading {
+      font-family: 'Outfit', sans-serif;
+      font-size: clamp(1.6rem, 4vw, 2.2rem);
+      font-weight: 700;
+      color: #ffffff;
+      letter-spacing: -0.02em;
+    }
+
+    /* Grid de la app — ruleta + entrada */
     .app-grid {
       display: grid;
       grid-template-columns: 1fr;
       gap: 2rem;
+    }
+
+    @media (min-width: 860px) {
+      .app-grid {
+        grid-template-columns: 1.1fr 0.9fr;
+        align-items: stretch;
+        gap: 2.5rem;
+      }
     }
 
     /* Columna de la Ruleta */
@@ -258,10 +545,58 @@
       justify-content: center;
     }
 
+    .wheel-title-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      margin-bottom: 1.25rem;
+      width: 100%;
+      max-width: 520px;
+    }
+
+    #wheel-title-text {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #ffffff;
+      text-align: center;
+      word-break: break-word;
+      cursor: pointer;
+      transition: var(--transition);
+      user-select: none;
+    }
+
+    #wheel-title-text:hover {
+      color: var(--accent-cyan);
+      text-decoration: underline;
+      text-decoration-style: dashed;
+      text-underline-offset: 4px;
+    }
+
+    .edit-title-btn {
+      background: transparent;
+      border: none;
+      color: var(--text-tertiary);
+      cursor: pointer;
+      font-size: 1.1rem;
+      padding: 0.25rem;
+      display: flex;
+      align-items: center;
+      transition: var(--transition);
+      opacity: 0.5;
+    }
+
+    .edit-title-btn:hover {
+      color: var(--accent-cyan);
+      opacity: 1;
+      transform: scale(1.15);
+    }
+
     .wheel-card {
-      background: var(--card-bg);
+      background: var(--bg-surface);
       border: 1px solid var(--card-border);
-      border-radius: 20px;
+      border-radius: var(--radius-lg);
       padding: 1.5rem;
       box-shadow: var(--shadow-lg);
       width: 100%;
@@ -288,45 +623,64 @@
       border-radius: 50%;
     }
 
-    /* Indicador físico (Flechita superior) */
+    /* Indicador (Flechita superior) */
     .pointer {
       position: absolute;
       top: -4px;
       left: 50%;
-      transform: translateX(-50%) translateY(0);
+      transform: translateX(-50%);
       z-index: 10;
       transform-origin: top center;
-      filter: drop-shadow(0 4px 6px rgba(0,0,0,0.3));
+      filter: drop-shadow(0 4px 8px rgba(0,0,0,0.4));
       pointer-events: none;
     }
 
-    /* Botón de Girar Central */
+    /* Botón GIRAR con pulso neón */
     .spin-center-button {
       position: absolute;
       width: 80px;
       height: 80px;
       border-radius: 50%;
-      background: radial-gradient(circle, #1a1b24 0%, #0b0c10 100%);
-      border: 4px solid var(--accent);
+      background: radial-gradient(circle, #151518 0%, #0a0a0a 100%);
+      border: 3px solid var(--accent-cyan);
       color: #ffffff;
       font-family: 'Outfit', sans-serif;
       font-weight: 800;
       font-size: 0.95rem;
-      letter-spacing: 0.05em;
+      letter-spacing: 0.06em;
       cursor: pointer;
       display: flex;
       align-items: center;
       justify-content: center;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.6), 0 0 0 0px var(--accent-glow);
-      transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s ease, border-color 0.3s ease;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.6), 0 0 0 0px var(--accent-glow-cyan);
+      transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+                  box-shadow 0.3s ease,
+                  border-color 0.3s ease;
       user-select: none;
       z-index: 20;
+      animation: neon-pulse 2.5s ease-in-out infinite;
+    }
+
+    @keyframes neon-pulse {
+      0%, 100% {
+        box-shadow: 0 4px 15px rgba(0,0,0,0.6),
+                    0 0 15px rgba(0, 229, 255, 0.15),
+                    0 0 30px rgba(0, 229, 255, 0.05);
+      }
+      50% {
+        box-shadow: 0 4px 15px rgba(0,0,0,0.6),
+                    0 0 20px rgba(0, 229, 255, 0.3),
+                    0 0 50px rgba(0, 229, 255, 0.12),
+                    0 0 80px rgba(0, 229, 255, 0.05);
+      }
     }
 
     .spin-center-button:hover {
-      transform: scale(1.06);
-      border-color: #7c3aed;
-      box-shadow: 0 6px 20px rgba(0,0,0,0.7), 0 0 15px var(--accent-glow);
+      transform: scale(1.08);
+      border-color: var(--accent-purple);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.7),
+                  0 0 25px var(--accent-glow-purple);
+      animation: none;
     }
 
     .spin-center-button:active {
@@ -336,28 +690,29 @@
     .spin-center-button:focus-visible {
       outline: none;
       border-color: #ffffff;
-      box-shadow: 0 0 0 4px var(--accent);
+      box-shadow: 0 0 0 4px var(--accent-cyan);
     }
 
     .spin-center-button:disabled {
       cursor: not-allowed;
-      border-color: rgba(255,255,255,0.15);
-      color: var(--text-secondary);
-      background: #15161e;
+      border-color: rgba(255,255,255,0.1);
+      color: var(--text-tertiary);
+      background: #111113;
       box-shadow: none;
       transform: scale(1);
+      animation: none;
     }
 
-    /* Columna de Entrada */
+    /* Columna de Entrada / Controles */
     .input-column {
       display: flex;
       flex-direction: column;
     }
 
     .input-card {
-      background: var(--card-bg);
+      background: var(--bg-surface);
       border: 1px solid var(--card-border);
-      border-radius: 20px;
+      border-radius: var(--radius-lg);
       padding: 1.5rem;
       box-shadow: var(--shadow-lg);
       display: flex;
@@ -367,7 +722,7 @@
 
     .section-title {
       font-family: 'Outfit', sans-serif;
-      font-size: 1.35rem;
+      font-size: 1.3rem;
       font-weight: 700;
       color: #ffffff;
       margin-bottom: 0.25rem;
@@ -379,11 +734,47 @@
       margin-bottom: 1rem;
     }
 
-    /* Textarea principal */
+    /* Pestañas de control */
+    .card-tabs {
+      display: flex;
+      border-bottom: 1px solid var(--card-border);
+      margin-bottom: 1.25rem;
+      gap: 0.25rem;
+    }
+
+    .tab-btn {
+      background: transparent;
+      border: none;
+      border-bottom: 2px solid transparent;
+      color: var(--text-secondary);
+      font-family: inherit;
+      font-size: 0.88rem;
+      font-weight: 600;
+      padding: 0.6rem 0.9rem;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .tab-btn:hover { color: var(--text-primary); }
+
+    .tab-btn.active {
+      color: var(--accent-cyan);
+      border-bottom-color: var(--accent-cyan);
+    }
+
+    .tab-content-pane {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+
+    .tab-content-pane.hidden { display: none !important; }
+
+    /* Textarea */
     #options-input {
       width: 100%;
       height: 250px;
-      background: rgba(0, 0, 0, 0.25);
+      background: rgba(0, 0, 0, 0.3);
       border: 1px solid var(--card-border);
       border-radius: 12px;
       padding: 1rem;
@@ -397,11 +788,11 @@
     }
 
     #options-input:focus {
-      border-color: var(--accent);
-      box-shadow: 0 0 0 3px var(--accent-glow);
+      border-color: var(--accent-cyan);
+      box-shadow: 0 0 0 3px var(--accent-glow-cyan);
     }
 
-    /* Controles de la lista */
+    /* Botones */
     .btn-group {
       display: flex;
       gap: 0.75rem;
@@ -410,12 +801,12 @@
 
     .btn-group button {
       flex: 1;
-      padding: 0.75rem 1rem;
+      padding: 0.7rem 1rem;
       border-radius: 10px;
       border: none;
       font-family: inherit;
       font-weight: 600;
-      font-size: 0.875rem;
+      font-size: 0.85rem;
       cursor: pointer;
       display: flex;
       align-items: center;
@@ -431,124 +822,32 @@
     }
 
     .secondary-btn:hover {
-      background: rgba(255, 255, 255, 0.1);
-      border-color: rgba(255, 255, 255, 0.15);
+      background: rgba(255, 255, 255, 0.09);
+      border-color: rgba(255, 255, 255, 0.14);
     }
 
-    .secondary-btn:active {
-      transform: translateY(1px);
-    }
+    .secondary-btn:active { transform: translateY(1px); }
 
     .danger-btn {
-      background: rgba(239, 68, 68, 0.1);
-      border: 1px solid rgba(239, 68, 68, 0.18);
+      background: rgba(239, 68, 68, 0.08);
+      border: 1px solid rgba(239, 68, 68, 0.15);
       color: #fca5a5;
     }
 
     .danger-btn:hover {
-      background: rgba(239, 68, 68, 0.18);
+      background: rgba(239, 68, 68, 0.15);
       border-color: rgba(239, 68, 68, 0.25);
       color: #f87171;
     }
 
-    .danger-btn:active {
-      transform: translateY(1px);
-    }
+    .danger-btn:active { transform: translateY(1px); }
 
     .btn-group button:focus-visible {
-      outline: 2px solid var(--accent);
+      outline: 2px solid var(--accent-cyan);
       outline-offset: 2px;
     }
 
-    /* Estilos del Título de la Ruleta y Editor */
-    .wheel-title-container {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 0.5rem;
-      margin-bottom: 1.25rem;
-      width: 100%;
-      max-width: 520px;
-    }
-
-    #wheel-title-text {
-      font-family: 'Outfit', sans-serif;
-      font-size: 1.6rem;
-      font-weight: 700;
-      color: #ffffff;
-      text-align: center;
-      word-break: break-word;
-      cursor: pointer;
-      transition: var(--transition);
-      user-select: none;
-    }
-
-    #wheel-title-text:hover {
-      color: #a5b4fc;
-      text-decoration: underline;
-      text-decoration-style: dashed;
-    }
-
-    .edit-title-btn {
-      background: transparent;
-      border: none;
-      color: var(--text-secondary);
-      cursor: pointer;
-      font-size: 1.15rem;
-      padding: 0.25rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: var(--transition);
-      opacity: 0.65;
-    }
-
-    .edit-title-btn:hover {
-      color: #ffffff;
-      opacity: 1;
-      transform: scale(1.15);
-    }
-
-    /* Pestañas de control de opciones */
-    .card-tabs {
-      display: flex;
-      border-bottom: 1px solid var(--card-border);
-      margin-bottom: 1.25rem;
-      gap: 0.25rem;
-    }
-
-    .tab-btn {
-      background: transparent;
-      border: none;
-      border-bottom: 2px solid transparent;
-      color: var(--text-secondary);
-      font-family: inherit;
-      font-size: 0.9rem;
-      font-weight: 600;
-      padding: 0.6rem 0.9rem;
-      cursor: pointer;
-      transition: var(--transition);
-    }
-
-    .tab-btn:hover {
-      color: var(--text-primary);
-    }
-
-    .tab-btn.active {
-      color: var(--accent);
-      border-bottom-color: var(--accent);
-    }
-
-    .tab-content-pane {
-      display: flex;
-      flex-direction: column;
-      flex: 1;
-    }
-
-    .tab-content-pane.hidden {
-      display: none !important;
-    }
-
+    /* Panel de ocultar/activar opciones */
     .manage-instruction {
       color: var(--text-secondary);
       font-size: 0.8rem;
@@ -565,22 +864,10 @@
       padding-right: 0.25rem;
     }
 
-    /* Scrollbar del panel de descarte */
-    .options-checklist-container::-webkit-scrollbar {
-      width: 6px;
-    }
-    .options-checklist-container::-webkit-scrollbar-track {
-      background: rgba(0,0,0,0.15);
-      border-radius: 4px;
-    }
-    .options-checklist-container::-webkit-scrollbar-thumb {
-      background: rgba(255,255,255,0.08);
-      border-radius: 4px;
-    }
-    .options-checklist-container::-webkit-scrollbar-thumb:hover {
-      background: rgba(255,255,255,0.15);
-      border-radius: 4px;
-    }
+    .options-checklist-container::-webkit-scrollbar { width: 5px; }
+    .options-checklist-container::-webkit-scrollbar-track { background: rgba(0,0,0,0.15); border-radius: 4px; }
+    .options-checklist-container::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.07); border-radius: 4px; }
+    .options-checklist-container::-webkit-scrollbar-thumb:hover { background: rgba(255,255,255,0.14); }
 
     .checklist-item {
       display: flex;
@@ -589,7 +876,7 @@
       background: rgba(0, 0, 0, 0.2);
       border: 1px solid var(--card-border);
       border-radius: 10px;
-      padding: 0.65rem 0.85rem;
+      padding: 0.6rem 0.85rem;
       cursor: pointer;
       user-select: none;
       transition: var(--transition);
@@ -597,13 +884,12 @@
 
     .checklist-item:hover {
       background: rgba(255, 255, 255, 0.02);
-      border-color: rgba(255, 255, 255, 0.12);
+      border-color: var(--card-border-hover);
     }
 
     .checklist-item input[type="checkbox"] {
-      accent-color: var(--accent);
-      width: 17px;
-      height: 17px;
+      accent-color: var(--accent-cyan);
+      width: 17px; height: 17px;
       cursor: pointer;
     }
 
@@ -615,125 +901,252 @@
     }
 
     .checklist-item.disabled {
-      opacity: 0.45;
+      opacity: 0.4;
       background: rgba(0, 0, 0, 0.08);
     }
 
     .checklist-item.disabled span {
       text-decoration: line-through;
-      color: var(--text-secondary);
+      color: var(--text-tertiary);
     }
 
-    /* ==========================================================================
-       SECCIÓN DE ARTÍCULO SEO Y CONTENIDO DE NICHO
-       ========================================================================== */
+    /* ==================================================================
+       HUB DE HERRAMIENTAS — Grid de Tarjetas
+       ================================================================== */
+    .hub-section {
+      padding: 4rem 0 5rem;
+    }
+
+    .hub-section .section-header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .hub-section .section-subtitle {
+      color: var(--text-secondary);
+      font-size: 1rem;
+      max-width: 500px;
+      margin: 0.75rem auto 0;
+    }
+
+    .hub-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .hub-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--card-border);
+      border-radius: var(--radius-lg);
+      padding: 2rem 1.75rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+                  border-color 0.35s ease,
+                  box-shadow 0.35s ease;
+    }
+
+    .hub-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: var(--accent-gradient);
+      opacity: 0;
+      transition: opacity 0.35s ease;
+    }
+
+    .hub-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(0, 229, 255, 0.2);
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3),
+                  0 0 20px rgba(0, 229, 255, 0.06);
+    }
+
+    .hub-card:hover::before {
+      opacity: 1;
+    }
+
+    .hub-card-icon {
+      width: 52px;
+      height: 52px;
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      background: rgba(0, 229, 255, 0.08);
+      border: 1px solid rgba(0, 229, 255, 0.12);
+      flex-shrink: 0;
+    }
+
+    .hub-card-icon svg {
+      width: 26px; height: 26px;
+      stroke: var(--accent-cyan);
+      stroke-width: 1.8;
+      fill: none;
+    }
+
+    .hub-card h3 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: #ffffff;
+      margin: 0;
+    }
+
+    .hub-card p {
+      color: var(--text-secondary);
+      font-size: 0.88rem;
+      line-height: 1.5;
+      margin: 0;
+      flex: 1;
+    }
+
+    .hub-card-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      padding: 0.4rem 0.9rem;
+      border-radius: 999px;
+      background: rgba(179, 102, 255, 0.08);
+      border: 1px solid rgba(179, 102, 255, 0.18);
+      color: var(--accent-purple);
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      width: fit-content;
+    }
+
+    .hub-card-badge.active {
+      background: rgba(0, 229, 255, 0.08);
+      border: 1px solid rgba(0, 229, 255, 0.18);
+      color: var(--accent-cyan);
+    }
+
+    /* ==================================================================
+       SECCIÓN DE ARTÍCULO SEO
+       ================================================================== */
     .seo-section {
-      background-color: var(--bg-darker);
+      background: var(--bg-surface-alt);
       border-top: 1px solid var(--card-border);
       border-bottom: 1px solid var(--card-border);
-      padding: 4rem 0;
-      margin-top: 2rem;
-      transition: var(--transition);
+      padding: 4.5rem 0;
     }
 
     .seo-article {
       color: var(--text-secondary);
       font-size: 1rem;
-      line-height: 1.75;
-      max-width: 800px;
+      line-height: 1.8;
+      max-width: 780px;
       margin: 0 auto;
     }
 
-    .seo-article h1, 
-    .seo-article h2, 
+    .seo-article h2,
     .seo-article h3 {
       color: #ffffff;
       font-family: 'Outfit', sans-serif;
       font-weight: 700;
-      margin-top: 2.25rem;
-      margin-bottom: 0.75rem;
       letter-spacing: -0.01em;
     }
 
-    .seo-article h1 {
-      font-size: 1.85rem;
-      margin-top: 0;
-      color: #ffffff;
+    .seo-article h2 {
+      font-size: 1.5rem;
+      margin-top: 2.75rem;
+      margin-bottom: 0.75rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
     }
 
-    .seo-article h2 {
-      font-size: 1.45rem;
-      border-bottom: 1px solid rgba(255,255,255,0.05);
-      padding-bottom: 0.5rem;
+    .seo-article h2:first-child {
+      margin-top: 0;
     }
 
     .seo-article h3 {
       font-size: 1.15rem;
+      margin-top: 2rem;
+      margin-bottom: 0.5rem;
     }
 
-    .seo-article p {
-      margin-bottom: 1.25rem;
-    }
-
-    .seo-article strong {
-      color: #ffffff;
-    }
+    .seo-article p { margin-bottom: 1.25rem; }
+    .seo-article strong { color: #ffffff; }
 
     .seo-article ul {
       margin-bottom: 1.5rem;
       padding-left: 1.5rem;
+      list-style: none;
     }
 
-    .seo-article li {
-      margin-bottom: 0.5rem;
+    .seo-article ul li {
+      margin-bottom: 0.6rem;
+      position: relative;
+      padding-left: 1.2rem;
+    }
+
+    .seo-article ul li::before {
+      content: '▸';
+      color: var(--accent-cyan);
+      position: absolute;
+      left: 0;
+      font-weight: bold;
     }
 
     .seo-article code {
-      background: rgba(255,255,255,0.06);
-      padding: 0.2rem 0.4rem;
+      background: rgba(0, 229, 255, 0.08);
+      padding: 0.15rem 0.4rem;
       border-radius: 4px;
       font-size: 0.875rem;
       font-family: monospace;
-      color: #a5b4fc;
+      color: var(--accent-cyan);
     }
 
-    /* Pie de página */
+    /* ==================================================================
+       FOOTER
+       ================================================================== */
     footer {
-      padding: 2.5rem 0;
+      padding: 3rem 0;
       text-align: center;
-      color: var(--text-secondary);
-      font-size: 0.85rem;
-      border-top: 1px solid rgba(255,255,255,0.02);
+      color: var(--text-tertiary);
+      font-size: 0.82rem;
+      border-top: 1px solid rgba(255,255,255,0.03);
     }
 
-    footer p {
-      margin-bottom: 0.5rem;
-    }
+    footer p { margin-bottom: 0.4rem; }
 
     footer a {
-      color: var(--accent);
+      color: var(--text-secondary);
       text-decoration: none;
       font-weight: 500;
       transition: var(--transition);
     }
 
     footer a:hover {
-      color: #818cf8;
-      text-decoration: underline;
+      color: var(--accent-cyan);
     }
 
-    /* ==========================================================================
-       MODAL DE GANADOR (Elegante y Accesible)
-       ========================================================================== */
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-bottom: 1rem;
+      flex-wrap: wrap;
+    }
+
+    /* ==================================================================
+       MODAL DE GANADOR
+       ================================================================== */
     .modal-overlay {
       position: fixed;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 100vh;
-      background-color: rgba(6, 7, 10, 0.82);
-      backdrop-filter: blur(8px);
-      -webkit-backdrop-filter: blur(8px);
+      top: 0; left: 0;
+      width: 100vw; height: 100vh;
+      background-color: rgba(6, 7, 10, 0.85);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -749,14 +1162,14 @@
     }
 
     .modal-card {
-      background-color: var(--card-bg);
+      background-color: var(--bg-surface);
       border: 1px solid var(--card-border);
-      border-radius: 20px;
+      border-radius: var(--radius-xl);
       padding: 2.5rem 2rem;
       max-width: 440px;
       width: 90%;
       text-align: center;
-      box-shadow: var(--shadow-glow), 0 20px 25px -5px rgba(0, 0, 0, 0.6);
+      box-shadow: var(--shadow-glow-cyan), 0 20px 40px rgba(0, 0, 0, 0.6);
       transform: scale(0.9);
       transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
     }
@@ -779,16 +1192,16 @@
 
     .modal-title {
       font-family: 'Outfit', sans-serif;
-      font-size: 1.35rem;
+      font-size: 1.3rem;
       font-weight: 700;
       color: var(--text-secondary);
       margin-bottom: 0.5rem;
     }
 
     .winner-name-container {
-      background: rgba(0, 0, 0, 0.2);
+      background: rgba(0, 0, 0, 0.25);
       border: 1px solid var(--card-border);
-      border-radius: 12px;
+      border-radius: 14px;
       padding: 1.25rem;
       margin: 1.5rem 0;
       overflow-wrap: break-word;
@@ -796,269 +1209,438 @@
 
     .winner-name-text {
       font-family: 'Outfit', sans-serif;
-      font-size: 2.1rem;
+      font-size: 2rem;
       font-weight: 800;
       line-height: 1.2;
-      background: linear-gradient(135deg, #a5b4fc 0%, #6366f1 50%, #4338ca 100%);
+      background: var(--accent-gradient);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      filter: drop-shadow(0 2px 8px rgba(99, 102, 241, 0.35));
+      background-clip: text;
+      filter: drop-shadow(0 2px 8px rgba(0, 229, 255, 0.3));
     }
 
     .primary-btn {
-      background: var(--accent);
-      color: #ffffff;
+      background: var(--accent-gradient);
+      color: #000000;
       border: none;
-      border-radius: 10px;
+      border-radius: 12px;
       padding: 0.8rem 2rem;
-      font-family: inherit;
-      font-weight: 600;
+      font-family: 'Outfit', sans-serif;
+      font-weight: 700;
       font-size: 0.95rem;
       cursor: pointer;
       width: 100%;
-      box-shadow: 0 4px 10px rgba(99, 102, 241, 0.3);
+      box-shadow: 0 4px 15px rgba(0, 229, 255, 0.2);
       transition: var(--transition);
     }
 
     .primary-btn:hover {
-      background: var(--accent-hover);
-      box-shadow: 0 6px 15px rgba(99, 102, 241, 0.45);
+      box-shadow: 0 6px 25px rgba(0, 229, 255, 0.35);
       transform: translateY(-1px);
     }
 
-    .primary-btn:active {
-      transform: translateY(1px);
-    }
+    .primary-btn:active { transform: translateY(1px); }
 
     .primary-btn:focus-visible {
       outline: 2px solid #ffffff;
       outline-offset: 2px;
     }
 
-    /* ==========================================================================
-       ESTILOS DEL MODO FOCO / CONCENTRACIÓN (TDAH)
-       ========================================================================== */
+    /* Confetti canvas */
+    #confetti-canvas {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100vw; height: 100vh;
+      pointer-events: none;
+      z-index: 99;
+    }
+
+    /* ==================================================================
+       MODO FOCO / CONCENTRACIÓN (TDAH)
+       ================================================================== */
     body.focus-mode-active {
-      background-color: var(--bg-darker);
+      background-color: #060608;
     }
 
     body.focus-mode-active header {
       background: transparent;
       border-bottom: none;
-      padding-top: 1.5rem;
     }
 
-    body.focus-mode-active .logo, 
-    body.focus-mode-active .seo-section, 
+    body.focus-mode-active .logo-link,
+    body.focus-mode-active .hero,
+    body.focus-mode-active .hub-section,
+    body.focus-mode-active .seo-section,
     body.focus-mode-active .ad-placeholder,
-    body.focus-mode-active footer {
+    body.focus-mode-active footer,
+    body.focus-mode-active .nav-link {
       display: none !important;
     }
 
-    body.focus-mode-active .header-container {
+    body.focus-mode-active .header-inner {
       justify-content: flex-end;
     }
 
-    body.focus-mode-active main {
-      min-height: calc(100vh - 100px);
+    body.focus-mode-active .roulette-section {
+      min-height: calc(100vh - 80px);
       display: flex;
       align-items: center;
-      justify-content: center;
       padding: 0;
+    }
+
+    body.focus-mode-active .roulette-section > .container {
+      width: 100%;
+    }
+
+    body.focus-mode-active .roulette-section .section-header {
+      display: none;
     }
 
     body.focus-mode-active .app-grid {
       align-items: center;
     }
 
-    /* Media query para pantallas de escritorio */
     @media (min-width: 860px) {
-      .app-grid {
-        grid-template-columns: 1.1fr 0.9fr;
-        align-items: stretch;
-        gap: 2.5rem;
-      }
-      
-      main {
-        padding: 2.5rem 0 4rem 0;
-      }
-
       body.focus-mode-active .app-grid {
-        grid-template-columns: 1.1fr 0.9fr;
         max-width: 950px;
-        width: 100%;
+        margin: 0 auto;
       }
     }
   </style>
 </head>
 <body>
 
-  <!-- Lienzo transparente para el efecto de confeti nativo -->
-  <canvas id="confetti-canvas"></canvas>
+  <!-- Canvas transparente para el efecto de confeti -->
+  <canvas id="confetti-canvas" aria-hidden="true"></canvas>
 
-  <!-- Lector de pantalla: Anunciador de resultados -->
+  <!-- Anunciador para lectores de pantalla -->
   <div id="sr-announcer" class="sr-only" aria-live="assertive" aria-atomic="true"></div>
 
-  <!-- Cabecera de la aplicación -->
+  <!-- ====================================================================
+       HEADER — Glassmorphism Sticky
+       ==================================================================== -->
   <header>
-    <div class="container header-container">
-      <div class="logo">
-        <span class="logo-icon" aria-hidden="true">🎡</span>
-        <h1>Ruleta Aleatoria</h1>
-      </div>
-      <div class="header-controls">
-        <button id="focus-toggle-btn" class="control-btn" title="Activar Modo Foco (Oculta distracciones para TDAH)" aria-pressed="false">
+    <div class="container header-inner">
+      <a href="#" class="logo-link" aria-label="Inicio de decídelo.app">
+        <span class="logo-icon" aria-hidden="true">🎯</span>
+        <span class="logo-text">decídelo.app</span>
+      </a>
+      <nav class="header-nav" aria-label="Navegación principal">
+        <a href="#ruleta" class="nav-link">Ruleta</a>
+        <a href="#herramientas" class="nav-link">Herramientas</a>
+        <a href="#acerca" class="nav-link">Acerca de</a>
+        <button id="focus-toggle-btn" class="control-btn" title="Activar Modo Foco" aria-pressed="false">
           <span class="btn-icon" aria-hidden="true">🎯</span>
-          <span>Modo Foco</span>
+          <span class="btn-label">Foco</span>
         </button>
-        <button id="sound-toggle-btn" class="control-btn" title="Activar/Desactivar sonido físico" aria-pressed="true">
+        <button id="sound-toggle-btn" class="control-btn" title="Activar/Desactivar sonido" aria-pressed="true">
           <span class="btn-icon" aria-hidden="true">🔊</span>
-          <span>Sonido</span>
+          <span class="btn-label">Sonido</span>
         </button>
-      </div>
+      </nav>
     </div>
   </header>
 
-  <!-- Marcador de Anuncio Superior -->
+  <!-- ====================================================================
+       HERO SECTION
+       ==================================================================== -->
+  <section class="hero reveal" id="hero">
+    <!-- Partículas decorativas de fondo -->
+    <div class="hero-particles" aria-hidden="true">
+      <div class="particle particle-1"></div>
+      <div class="particle particle-2"></div>
+      <div class="particle particle-3"></div>
+      <div class="particle particle-4"></div>
+    </div>
+
+    <div class="container hero-content">
+      <div class="hero-badge">
+        <span>✨</span> 100% Gratis · Sin Registro
+      </div>
+      <h1>Toma decisiones <span class="gradient-text">aleatorias</span> en segundos</h1>
+      <p class="hero-subtitle">La forma más fácil, rápida y divertida de resolver tus dilemas. Sin registro, sin dramas. ¡Dale al azar!</p>
+      <a href="#ruleta" class="hero-cta" id="hero-cta-btn">
+        Girar la Ruleta
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="12" y1="5" x2="12" y2="19"></line>
+          <polyline points="19 12 12 19 5 12"></polyline>
+        </svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- Espacio Publicitario Superior -->
+  <!-- INSTRUCCIONES ADSENSE: Reemplaza este div con tu script de AdSense -->
   <div class="container">
-    <div class="ad-placeholder top-ad" id="ad-slot-top" aria-hidden="true"></div>
+    <div class="ad-placeholder" id="ad-slot-top" aria-hidden="true"></div>
   </div>
 
-  <!-- Contenido Principal -->
-  <main class="container">
-    <div class="app-grid">
-      
-      <!-- Sección Izquierda: La Ruleta -->
-      <section class="wheel-column" aria-label="Lienzo de la Ruleta">
-        <div class="wheel-title-container">
-          <h2 id="wheel-title-text" title="Haz clic para editar el título">Ruleta de Opciones</h2>
-          <button id="edit-title-btn" class="edit-title-btn" title="Editar título de la ruleta" aria-label="Editar título de la ruleta">
-            <span class="btn-icon" aria-hidden="true">✏️</span>
-          </button>
-        </div>
-        <div class="wheel-card">
-          <div class="wheel-outer-wrapper">
-            <!-- Indicador visual superior -->
-            <div class="pointer" id="wheel-pointer">
-              <svg width="34" height="34" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M15 30L3 7.5L27 7.5L15 30Z" fill="url(#pointer-grad)"/>
-                <path d="M15 25L6.5 9L23.5 9L15 25Z" fill="#ff4b5c"/>
-                <defs>
-                  <linearGradient id="pointer-grad" x1="15" y1="0" x2="15" y2="30" gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#ff7b88"/>
-                    <stop offset="1" stop-color="#ff4b5c"/>
-                  </linearGradient>
-                </defs>
-              </svg>
-            </div>
-            <!-- Canvas de la ruleta -->
-            <canvas id="roulette-canvas"></canvas>
-            <!-- Botón de control central -->
-            <button id="spin-button" class="spin-center-button" aria-label="Girar la rueda aleatoria">GIRAR</button>
-          </div>
-        </div>
-      </section>
-
-      <!-- Sección Derecha: Entrada de Datos -->
-      <section class="input-column" aria-labelledby="input-title">
-        <div class="input-card">
-          <h2 id="input-title" class="section-title">Opciones de la Ruleta</h2>
-          <p class="section-desc">Escribe tus opciones o contrólalas de forma individual.</p>
-          
-          <!-- Pestañas para cambiar entre Editor de Texto y Gestor de Descarte -->
-          <div class="card-tabs">
-            <button id="tab-edit" class="tab-btn active" role="tab" aria-selected="true" aria-controls="tab-edit-content">📝 Texto</button>
-            <button id="tab-manage" class="tab-btn" role="tab" aria-selected="false" aria-controls="tab-manage-content">👁️ Ocultar/Activar (<span id="active-count">0</span>/<span id="total-count">0</span>)</button>
-          </div>
-
-          <!-- Pestaña 1: Editor de Texto plano -->
-          <div id="tab-edit-content" class="tab-content-pane">
-            <textarea id="options-input" autocomplete="off" spellcheck="false" placeholder="Ingresa tus nombres u opciones aquí, una por línea..." aria-label="Escribe las opciones de la ruleta una por línea"></textarea>
-            
-            <div class="btn-group">
-              <button id="shuffle-btn" class="secondary-btn" title="Mezclar aleatoriamente el orden de la lista">
-                <span class="btn-icon" aria-hidden="true">🔀</span> Mezclar
-              </button>
-              <button id="clear-btn" class="danger-btn" title="Vaciar la lista completa de opciones">
-                <span class="btn-icon" aria-hidden="true">🗑️</span> Limpiar
-              </button>
-            </div>
-          </div>
-
-          <!-- Pestaña 2: Lista de Descarte / Habilitado individual -->
-          <div id="tab-manage-content" class="tab-content-pane hidden">
-            <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 0.5rem; margin-bottom: 0.75rem;">
-              <p class="manage-instruction" style="margin-bottom: 0;">Desmarca las casillas para ocultar opciones de la ruleta temporalmente sin borrarlas de tu lista.</p>
-              <button id="activate-all-btn" class="secondary-btn" style="padding: 0.4rem 0.6rem; font-size: 0.75rem; white-space: nowrap; flex-shrink: 0;" title="Activar todas las opciones ocultas">
-                <span class="btn-icon" aria-hidden="true">✅</span> Activar Todas
-              </button>
-            </div>
-            <div id="options-checklist-container" class="options-checklist-container">
-              <!-- Se genera dinámicamente con JavaScript -->
-            </div>
-          </div>
-        </div>
-      </section>
-      
-    </div>
-  </main>
-
-  <!-- ==========================================================================
-       SECCIÓN SEO OPTIMIZADA PARA ORGÁNICO
-       ========================================================================== -->
-  <section id="seo-content" class="seo-section">
+  <!-- ====================================================================
+       SECCIÓN DE LA RULETA — Herramienta Principal
+       ==================================================================== -->
+  <section class="roulette-section reveal" id="ruleta" aria-label="Ruleta de Decisión Aleatoria">
     <div class="container">
-      <article class="seo-article">
-        <h1>Ruleta Aleatoria Online: La Herramienta Definitiva para Tomar Decisiones</h1>
-        <p>¿Te encuentras atascado ante una elección difícil? ¿Estás organizando un sorteo de nombres y necesitas un método transparente e imparcial? Nuestra <strong>ruleta aleatoria online</strong> es la solución digital perfecta. Diseñada bajo estándares de última generación, esta rueda interactiva te permite resolver dudas, sortear premios o elegir opciones de forma instantánea, directamente en tu navegador y sin costo alguno.</p>
+      <div class="section-header">
+        <div class="section-tag">🎡 Herramienta Principal</div>
+        <h2 class="section-heading">Ruleta de Decisión Aleatoria</h2>
+      </div>
 
-        <h2>¿Cómo utilizar la Ruleta Virtual para tomar decisiones?</h2>
-        <p>El uso de la herramienta es sumamente intuitivo y rápido, ideal tanto para ordenadores como para dispositivos móviles:</p>
+      <div class="app-grid">
+        <!-- Columna Izquierda: La Ruleta -->
+        <div class="wheel-column">
+          <div class="wheel-title-container">
+            <h3 id="wheel-title-text" title="Haz clic para editar el título">Ruleta de Opciones</h3>
+            <button id="edit-title-btn" class="edit-title-btn" title="Editar título" aria-label="Editar título de la ruleta">
+              <span aria-hidden="true">✏️</span>
+            </button>
+          </div>
+          <div class="wheel-card">
+            <div class="wheel-outer-wrapper">
+              <!-- Indicador visual superior -->
+              <div class="pointer" id="wheel-pointer">
+                <svg width="34" height="34" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15 30L3 7.5L27 7.5L15 30Z" fill="url(#pointer-grad)"/>
+                  <path d="M15 25L6.5 9L23.5 9L15 25Z" fill="#00e5ff"/>
+                  <defs>
+                    <linearGradient id="pointer-grad" x1="15" y1="0" x2="15" y2="30" gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#66f0ff"/>
+                      <stop offset="1" stop-color="#00e5ff"/>
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+              <!-- Canvas de la ruleta -->
+              <canvas id="roulette-canvas"></canvas>
+              <!-- Botón central GIRAR -->
+              <button id="spin-button" class="spin-center-button" aria-label="Girar la rueda aleatoria">GIRAR</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Columna Derecha: Entrada de Datos -->
+        <div class="input-column">
+          <div class="input-card">
+            <h3 id="input-title" class="section-title">Opciones de la Ruleta</h3>
+            <p class="section-desc">Escribe tus opciones o contrólalas de forma individual.</p>
+
+            <!-- Pestañas -->
+            <div class="card-tabs">
+              <button id="tab-edit" class="tab-btn active" role="tab" aria-selected="true" aria-controls="tab-edit-content">📝 Texto</button>
+              <button id="tab-manage" class="tab-btn" role="tab" aria-selected="false" aria-controls="tab-manage-content">👁️ Ocultar/Activar (<span id="active-count">0</span>/<span id="total-count">0</span>)</button>
+            </div>
+
+            <!-- Pestaña 1: Editor de texto -->
+            <div id="tab-edit-content" class="tab-content-pane">
+              <textarea id="options-input" autocomplete="off" spellcheck="false" placeholder="Ingresa tus opciones aquí, una por línea..." aria-label="Escribe las opciones de la ruleta una por línea"></textarea>
+              <div class="btn-group">
+                <button id="shuffle-btn" class="secondary-btn" title="Mezclar aleatoriamente el orden">
+                  <span class="btn-icon" aria-hidden="true">🔀</span> Mezclar
+                </button>
+                <button id="clear-btn" class="danger-btn" title="Vaciar la lista completa">
+                  <span class="btn-icon" aria-hidden="true">🗑️</span> Limpiar
+                </button>
+              </div>
+            </div>
+
+            <!-- Pestaña 2: Lista de descarte -->
+            <div id="tab-manage-content" class="tab-content-pane hidden">
+              <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 0.5rem; margin-bottom: 0.75rem;">
+                <p class="manage-instruction" style="margin-bottom: 0;">Desmarca las casillas para ocultar opciones de la ruleta temporalmente sin borrarlas.</p>
+                <button id="activate-all-btn" class="secondary-btn" style="padding: 0.4rem 0.6rem; font-size: 0.75rem; white-space: nowrap; flex-shrink: 0;" title="Activar todas las opciones">
+                  <span class="btn-icon" aria-hidden="true">✅</span> Activar Todas
+                </button>
+              </div>
+              <div id="options-checklist-container" class="options-checklist-container">
+                <!-- Se genera dinámicamente con JavaScript -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       HUB DE HERRAMIENTAS — Tarjetas de Futuras Herramientas
+       ==================================================================== -->
+  <section class="hub-section" id="herramientas" aria-label="Más herramientas de decisión">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">🧰 Caja de Herramientas</div>
+        <h2 class="section-heading">Más herramientas para decidir</h2>
+        <p class="section-subtitle">Explora nuestro arsenal completo de herramientas aleatorias. Nuevas opciones llegarán muy pronto.</p>
+      </div>
+
+      <div class="hub-grid">
+
+        <!-- Tarjeta 1: Lanzar Moneda -->
+        <a href="./moneda.html" class="hub-card reveal-scale reveal-delay-1" id="card-moneda" style="text-decoration: none;">
+          <div class="hub-card-icon">
+            <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M12 6v6l4 2"/>
+            </svg>
+          </div>
+          <h3>Lanzar Moneda</h3>
+          <p>Cara o cruz al instante. La forma más rápida de resolver un dilema de dos opciones con un simple toque.</p>
+          <span class="hub-card-badge active">⚡ Disponible</span>
+        </a>
+
+        <!-- Tarjeta 2: Dados Virtuales -->
+        <article class="hub-card reveal-scale reveal-delay-2" id="card-dados">
+          <div class="hub-card-icon">
+            <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="18" height="18" rx="3" ry="3"/>
+              <circle cx="8.5" cy="8.5" r="1.2" fill="currentColor" stroke="none"/>
+              <circle cx="15.5" cy="8.5" r="1.2" fill="currentColor" stroke="none"/>
+              <circle cx="8.5" cy="15.5" r="1.2" fill="currentColor" stroke="none"/>
+              <circle cx="15.5" cy="15.5" r="1.2" fill="currentColor" stroke="none"/>
+            </svg>
+          </div>
+          <h3>Dados Virtuales</h3>
+          <p>Lanza hasta 6 dados simultáneamente con animaciones 3D realistas. Perfecto para juegos de mesa y rol.</p>
+          <span class="hub-card-badge">⏳ Próximamente</span>
+        </article>
+
+        <!-- Tarjeta 3: Selector Aleatorio de Lista -->
+        <article class="hub-card reveal-scale reveal-delay-3" id="card-selector">
+          <div class="hub-card-icon">
+            <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2"/>
+              <rect x="9" y="3" width="6" height="4" rx="1"/>
+              <path d="M9 14l2 2 4-4"/>
+            </svg>
+          </div>
+          <h3>Selector Aleatorio de Lista</h3>
+          <p>Pega tu lista de elementos y elige uno al azar con un solo clic. Ideal para sorteos y asignaciones rápidas.</p>
+          <span class="hub-card-badge">⏳ Próximamente</span>
+        </article>
+
+        <!-- Tarjeta 4: Generador de Números -->
+        <article class="hub-card reveal-scale reveal-delay-4" id="card-numeros">
+          <div class="hub-card-icon">
+            <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="4 17 10 11 4 5"/>
+              <line x1="12" y1="19" x2="20" y2="19"/>
+            </svg>
+          </div>
+          <h3>Generador de Números</h3>
+          <p>Genera números aleatorios dentro de un rango personalizado. Configura mínimo, máximo y cuántos generar.</p>
+          <span class="hub-card-badge">⏳ Próximamente</span>
+        </article>
+
+        <!-- Tarjeta 5: Generador de Equipos -->
+        <article class="hub-card reveal-scale reveal-delay-5" id="card-equipos">
+          <div class="hub-card-icon">
+            <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+              <circle cx="9" cy="7" r="4"/>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+            </svg>
+          </div>
+          <h3>Generador de Equipos</h3>
+          <p>Divide un grupo de personas en equipos equilibrados al azar. Perfecto para deportes, clases y dinámicas.</p>
+          <span class="hub-card-badge">⏳ Próximamente</span>
+        </article>
+
+        <!-- Tarjeta 6: Carta Aleatoria -->
+        <article class="hub-card reveal-scale reveal-delay-6" id="card-carta">
+          <div class="hub-card-icon">
+            <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="2" width="18" height="20" rx="2.5"/>
+              <path d="M12 8v4"/>
+              <path d="M9 17h6"/>
+              <circle cx="12" cy="8" r="0" fill="currentColor"/>
+              <text x="8" y="14" font-size="7" font-weight="bold" fill="currentColor" stroke="none" font-family="serif">A♠</text>
+            </svg>
+          </div>
+          <h3>Carta Aleatoria</h3>
+          <p>Saca una carta de la baraja al azar con animación de volteo. Ideal para juegos de cartas y adivinación.</p>
+          <span class="hub-card-badge">⏳ Próximamente</span>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       SECCIÓN DE ARTÍCULO SEO
+       ==================================================================== -->
+  <section id="acerca" class="seo-section" aria-label="Información sobre decidir al azar">
+    <div class="container reveal">
+      <article class="seo-article">
+        <h2>¿Qué es decídelo.app y para qué sirve?</h2>
+        <p><strong>Decídelo.app</strong> es un hub de herramientas de decisión aleatoria diseñado para resolver esos momentos de indecisión que todos enfrentamos a diario. Ya sea que necesites elegir qué cenar, sortear un ganador entre participantes, asignar tareas de forma imparcial o simplemente dejar que el destino tome la decisión por ti, nuestras herramientas hacen el trabajo pesado en cuestión de segundos.</p>
+        <p>A diferencia de otros servicios similares, <strong>decídelo.app</strong> funciona 100% en tu navegador. Tus datos nunca salen de tu dispositivo: no hay servidores externos, no hay cookies de rastreo, y no hay necesidad de registro. Todo se almacena localmente mediante la tecnología <code>localStorage</code>, garantizando tu privacidad total.</p>
+
+        <h2>La Ruleta Aleatoria Online: Tu aliada contra la indecisión</h2>
+        <p>Nuestra herramienta estrella es la <strong>Ruleta Aleatoria Online</strong>. Construida con tecnología <strong>HTML5 Canvas</strong> de última generación, ofrece una experiencia visual fluida a 60 fotogramas por segundo con un algoritmo de desaceleración basado en física de fricción real. Cada giro se siente orgánico, impredecible y emocionante.</p>
+
+        <h3>¿Cómo funciona la Ruleta?</h3>
         <ul>
-          <li><strong>Ingresa las opciones:</strong> En el cuadro de texto lateral (o inferior en móviles), escribe los elementos que deseas incluir en la ruleta, colocando cada opción en una línea distinta.</li>
-          <li><strong>Actualización en tiempo real:</strong> Observa cómo la ruleta dibuja de forma automática y dinámica cada sector con colores llamativos y de alto contraste conforme agregas o editas la lista.</li>
-          <li><strong>¡Gira la ruleta!:</strong> Haz clic en el botón central <strong>"GIRAR"</strong>. La rueda comenzará a dar vueltas a gran velocidad y se desacelerará gradualmente siguiendo físicas de fricción realistas.</li>
-          <li><strong>Descubre el resultado:</strong> En pocos segundos, la ruleta se detendrá indicando al ganador con precisión milimétrica, celebrando el resultado con una sutil cascada de confeti.</li>
+          <li><strong>Escribe tus opciones</strong> en el panel lateral (una por línea). La ruleta se actualiza en tiempo real.</li>
+          <li><strong>Personaliza el título</strong> haciendo clic sobre él. Ideal para sorteos con nombre: "¿Quién lava los platos?".</li>
+          <li><strong>Presiona GIRAR</strong> y observa cómo la rueda cobra vida con efectos de sonido sintetizados y un puntero que se sacude al pasar por cada segmento.</li>
+          <li><strong>¡Resultado con confeti!</strong> Al detenerse, un modal elegante revela al ganador con una celebración visual de confeti animado.</li>
+          <li><strong>Oculta opciones</strong> sin borrarlas. Perfecto para torneos por eliminación o para ir descartando candidatos ronda a ronda.</li>
         </ul>
 
-        <h2>Casos de uso comunes de una Ruleta Aleatoria</h2>
-        <p>Las aplicaciones prácticas de un sorteador de este tipo son infinitas. Aquí te compartimos algunas de las más populares entre nuestros usuarios:</p>
-        
-        <h3>1. Sorteos de Nombres</h3>
-        <p>Ya sea para dinamizar tus sorteos en redes sociales (como Instagram o Facebook), seleccionar ganadores en proyectos de clase, o elegir el orden de exposición de tus estudiantes, la <em>ruleta de nombres</em> garantiza imparcialidad absoluta y mantiene al público emocionado hasta el último segundo.</p>
+        <h2>Casos de uso populares</h2>
 
-        <h3>2. Decidir qué comer (Ruleta de Comida)</h3>
-        <p>La indecisión a la hora de cenar es un clásico en parejas y de amigos. Introduce opciones como "Pizza 🍕", "Tacos 🌮", "Sushi 🍣" o "Hamburguesas 🍔" y deja que el destino elija el menú del día, evitando discusiones innecesarias de forma divertida.</p>
+        <h3>Sorteos de nombres y ganadores</h3>
+        <p>Ya sea para dinamizar tus sorteos en redes sociales (Instagram, TikTok, Facebook), seleccionar ganadores en concursos, o elegir el orden de exposición de estudiantes en clase, la <em>ruleta de nombres</em> garantiza imparcialidad absoluta. El público confía en un resultado visualmente aleatorio más que en un simple número generado por computadora.</p>
 
-        <h3>3. Dinámicas de Clase y Gamificación</h3>
-        <p>Los profesores utilizan esta herramienta para hacer preguntas aleatorias en clase, asignar tareas domésticas o de grupo, o seleccionar temas de debate de forma dinámica. La ruleta mantiene a los alumnos alerta y participativos.</p>
+        <h3>Decidir qué comer</h3>
+        <p>El clásico dilema de parejas y amigos. Introduce opciones como "Pizza 🍕", "Tacos 🌮", "Sushi 🍣" o "Hamburguesas 🍔" y deja que el destino elija el menú del día. Elimina discusiones innecesarias de forma divertida y democrática.</p>
 
-        <h3>4. Juegos y Entretenimiento</h3>
-        <p>Úsala como una ruleta de la fortuna, verdad o reto, o para determinar penitencias en juegos de mesa caseros. Puedes personalizarla con números, retos, castigos o recompensas.</p>
+        <h3>Dinámicas de clase y gamificación</h3>
+        <p>Los profesores y facilitadores utilizan esta herramienta para hacer preguntas aleatorias, asignar tareas, seleccionar equipos o elegir temas de debate. La ruleta mantiene a los participantes alerta, atentos y comprometidos porque cualquiera puede ser el próximo.</p>
 
-        <h2>Diseño Accesible y Enfoque en TDAH</h2>
-        <p>Hemos diseñado esta ruleta virtual con especial atención a la experiencia de usuario y la accesibilidad. Contamos con un <strong>Modo Foco (Modo Concentración)</strong> que elimina cualquier distracción de la pantalla (como textos informativos o anuncios) y te permite centrar toda tu atención en la ruleta y las opciones. Además, el elegante modo oscuro predeterminado y la paleta de colores HSL bien espaciada reducen la fatiga ocular, mientras que los sonidos físicos sintéticos (con opción a silenciar) proporcionan una experiencia estimulante pero controlada, idónea para personas con TDAH.</p>
+        <h3>Juegos y entretenimiento</h3>
+        <p>Úsala como una ruleta de la fortuna, verdad o reto, penitencias para fiestas o para determinar premios en eventos. Personalízala con retos, castigos, recompensas o cualquier contenido creativo que se te ocurra.</p>
 
-        <h2>¿Es segura y privada esta Ruleta Online?</h2>
-        <p>Absolutamente. A diferencia de otros servicios, nuestra aplicación opera 100% en el lado del cliente (en tu propio navegador). Tus datos y listas de opciones nunca son enviados a ningún servidor ni compartidos con terceros. Todo el almacenamiento se maneja de forma local en tu dispositivo utilizando la tecnología <code>localStorage</code>, lo que significa que cuando recargues la página o vuelvas mañana, tu lista de opciones seguirá estando allí intacta y totalmente privada.</p>
+        <h2>Diseño accesible y enfoque en la concentración</h2>
+        <p>Hemos diseñado <strong>decídelo.app</strong> con especial atención a la accesibilidad y experiencia de usuario. Nuestro <strong>Modo Foco</strong> elimina todas las distracciones de la pantalla (texto informativo, herramientas secundarias, anuncios) y te permite centrarte exclusivamente en la ruleta y tus opciones. Este modo es especialmente útil para personas con TDAH o que simplemente prefieren una interfaz limpia.</p>
+        <p>El elegante modo oscuro predeterminado con una paleta cuidadosamente seleccionada reduce la fatiga ocular durante sesiones prolongadas. Los sonidos físicos sintéticos (totalmente opcionales) proporcionan retroalimentación sensorial sin ser intrusivos.</p>
+
+        <h2>¿Por qué decídelo.app es diferente?</h2>
+        <ul>
+          <li><strong>Privacidad real:</strong> Sin servidores, sin cookies, sin registro. Todo funciona localmente en tu navegador.</li>
+          <li><strong>Velocidad:</strong> Carga instantánea. No hay dependencias pesadas ni frameworks innecesarios.</li>
+          <li><strong>Diseño premium:</strong> Cada detalle está cuidado: desde las micro-animaciones hasta la paleta de colores.</li>
+          <li><strong>Accesibilidad:</strong> Compatible con lectores de pantalla, navegación por teclado y preferencias de movimiento reducido.</li>
+          <li><strong>Offline-ready:</strong> Una vez cargada, funciona sin conexión a internet.</li>
+        </ul>
       </article>
     </div>
   </section>
 
-  <!-- Marcador de Anuncio Inferior -->
+  <!-- Espacio Publicitario Inferior -->
+  <!-- INSTRUCCIONES ADSENSE: Reemplaza este div con tu script de AdSense -->
   <div class="container">
-    <div class="ad-placeholder bottom-ad" id="ad-slot-bottom" aria-hidden="true"></div>
+    <div class="ad-placeholder" id="ad-slot-bottom" aria-hidden="true"></div>
   </div>
 
-  <!-- Pie de Página -->
+  <!-- ====================================================================
+       FOOTER
+       ==================================================================== -->
   <footer>
     <div class="container">
-      <p>&copy; 2026 Ruleta Aleatoria Online. Creado con fines de entretenimiento y productividad.</p>
-      <p>Optimizado estáticamente para un despliegue ágil en GitHub Pages.</p>
+      <div class="footer-links">
+        <a href="#ruleta">Ruleta</a>
+        <a href="#herramientas">Herramientas</a>
+        <a href="#acerca">Acerca de</a>
+      </div>
+      <p>&copy; 2026 <strong>decídelo.app</strong> — Hub de Herramientas de Decisión Aleatoria.</p>
+      <p>Creado con ❤️ para resolver tus dilemas. Alojado de forma estática.</p>
     </div>
   </footer>
 
-  <!-- Modal del Ganador -->
+  <!-- ====================================================================
+       MODAL DEL GANADOR
+       ==================================================================== -->
   <div id="winner-modal" class="modal-overlay" aria-hidden="true" role="dialog" aria-labelledby="modal-winner-title">
     <div class="modal-card">
       <span class="celebration-emoji" aria-hidden="true">🎉</span>
@@ -1070,10 +1652,48 @@
     </div>
   </div>
 
-  <!-- ==========================================================================
+  <!-- ====================================================================
        LÓGICA EN VANILLA JAVASCRIPT (ES6+)
-       ========================================================================== -->
+       Completamente comentado en español
+       ==================================================================== -->
   <script>
+    // ==========================================================
+    // SISTEMA DE SCROLL-REVEAL CON INTERSECTION OBSERVER
+    // Anima los elementos con clase .reveal y .reveal-scale al
+    // entrar en el viewport del usuario.
+    // ==========================================================
+    (function initScrollReveal() {
+      // Detectar preferencia de movimiento reducido
+      const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      if (prefersReducedMotion) {
+        // Si el usuario prefiere movimiento reducido, mostrar todo sin animación
+        document.querySelectorAll('.reveal, .reveal-scale').forEach(el => {
+          el.classList.add('revealed');
+        });
+        return;
+      }
+
+      const observerOptions = {
+        threshold: 0.08,
+        rootMargin: '0px 0px -40px 0px'
+      };
+
+      const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('revealed');
+            revealObserver.unobserve(entry.target); // Solo animar una vez
+          }
+        });
+      }, observerOptions);
+
+      // Observar todos los elementos con clase de revelación
+      document.querySelectorAll('.reveal, .reveal-scale').forEach(el => {
+        revealObserver.observe(el);
+      });
+    })();
+
     // ==========================================================
     // SISTEMA DE CONFETTI NATIVO EN CANVAS
     // ==========================================================
@@ -1090,10 +1710,10 @@
         this.active = true;
         this.particles = [];
         this.resize();
-        
-        // Paleta de colores festivos
-        const colors = ['#6366f1', '#a5b4fc', '#f43f5e', '#fb7185', '#34d399', '#fbbf24', '#a78bfa'];
-        
+
+        // Paleta de colores festivos acorde a la marca
+        const colors = ['#00e5ff', '#b366ff', '#f43f5e', '#fb7185', '#34d399', '#fbbf24', '#a78bfa', '#66f0ff'];
+
         // Crear partículas
         const particleCount = 140;
         for (let i = 0; i < particleCount; i++) {
@@ -1131,7 +1751,6 @@
           p.x += Math.sin(p.tiltAngle) * 0.5;
           p.tilt = Math.sin(p.tiltAngle - i / 3) * 12;
 
-          // Si la partícula sigue en pantalla, dibujarla
           if (p.y < this.canvas.height) {
             activeParticles = true;
             this.ctx.beginPath();
@@ -1160,7 +1779,7 @@
     // ==========================================================
     // LÓGICA DE LA RULETA E INTERFAZ
     // ==========================================================
-    
+
     // Elementos del DOM
     const canvas = document.getElementById('roulette-canvas');
     const ctx = canvas.getContext('2d');
@@ -1171,7 +1790,7 @@
     const clearBtn = document.getElementById('clear-btn');
     const soundToggleBtn = document.getElementById('sound-toggle-btn');
     const focusToggleBtn = document.getElementById('focus-toggle-btn');
-    
+
     const winnerModal = document.getElementById('winner-modal');
     const winnerDisplay = document.getElementById('winner-display');
     const modalCloseBtn = document.getElementById('modal-close-btn');
@@ -1188,7 +1807,7 @@
     const totalCountSpan = document.getElementById('total-count');
     const wheelTitleText = document.getElementById('wheel-title-text');
     const editTitleBtn = document.getElementById('edit-title-btn');
-    
+
     // Instancia del gestor de confeti
     const confetti = new ConfettiManager(confettiCanvas);
 
@@ -1207,17 +1826,17 @@
     let disabledOptions = new Set();
     let options = [];
     let colors = [];
-    let currentAngle = 0; // Ángulo actual en radianes
-    let spinVelocity = 0; // Velocidad angular por frame
+    let currentAngle = 0;   // Ángulo actual en radianes
+    let spinVelocity = 0;   // Velocidad angular por frame
     let isSpinning = false;
     let lastTickSegmentIndex = -1;
-    let pointerTilt = 0; // Inclinación física del puntero
-    
-    // Sonido y Foco TDAH (Persistidos)
+    let pointerTilt = 0;    // Inclinación física del puntero
+
+    // Sonido y Foco (Persistidos en localStorage)
     let soundEnabled = localStorage.getItem('ruleta_sound') !== 'false';
     let focusModeEnabled = localStorage.getItem('ruleta_focus') === 'true';
 
-    // Inicializar Audio Context de forma perezosa (requisito del navegador)
+    // Audio Context perezoso (requisito de los navegadores modernos)
     let audioCtx = null;
 
     function initAudio() {
@@ -1229,7 +1848,7 @@
       }
     }
 
-    // Generar sintetizador para sonido físico "tick"
+    // Sonido de "tick" físico sintetizado con Web Audio API
     function playTickSound() {
       if (!soundEnabled) return;
       initAudio();
@@ -1242,10 +1861,10 @@
         gain.connect(audioCtx.destination);
 
         osc.type = 'triangle';
-        
-        // Pitch dinámico: los tics son más graves a menor velocidad para simular inercia física
+
+        // Pitch dinámico: los tics son más graves a menor velocidad (simula inercia)
         const speedFactor = Math.min(spinVelocity / 0.4, 1);
-        const frequency = 250 + speedFactor * 320; // Rango de 250Hz a 570Hz
+        const frequency = 250 + speedFactor * 320;
 
         osc.frequency.setValueAtTime(frequency, audioCtx.currentTime);
         osc.frequency.exponentialRampToValueAtTime(60, audioCtx.currentTime + 0.035);
@@ -1260,7 +1879,7 @@
       }
     }
 
-    // Generar arpegio de victoria sintético (Web Audio API)
+    // Arpegio de victoria sintético
     function playWinnerSound() {
       if (!soundEnabled) return;
       initAudio();
@@ -1268,9 +1887,8 @@
 
       try {
         const now = audioCtx.currentTime;
-        // Secuencia de notas alegres (Do Mayor: Do, Mi, Sol, Do)
-        const notes = [261.63, 329.63, 392.00, 523.25];
-        
+        const notes = [261.63, 329.63, 392.00, 523.25]; // Do Mayor
+
         notes.forEach((freq, index) => {
           const osc = audioCtx.createOscillator();
           const gain = audioCtx.createGain();
@@ -1279,7 +1897,7 @@
 
           osc.type = 'sine';
           osc.frequency.setValueAtTime(freq, now + index * 0.09);
-          
+
           gain.gain.setValueAtTime(0, now + index * 0.09);
           gain.gain.linearRampToValueAtTime(0.08, now + index * 0.09 + 0.04);
           gain.gain.exponentialRampToValueAtTime(0.001, now + index * 0.09 + 0.25);
@@ -1292,18 +1910,16 @@
       }
     }
 
-    // Generar paleta de colores HSL usando el ángulo áureo (distribución óptima)
+    // Generar paleta de colores HSL con ángulo áureo (distribución óptima)
     function generateContrastColors(count) {
       colors = [];
       for (let i = 0; i < count; i++) {
-        // 137.5 grados es el ángulo áureo para maximizar distancia tonal
         const hue = (i * 137.5) % 360;
-        // Colores vivos e intermedios para excelente contraste en tema oscuro
         colors.push(`hsl(${hue}, 72%, 52%)`);
       }
     }
 
-    // Truncar textos largos para evitar colapsar el centro de la rueda
+    // Truncar textos largos para no colisionar con el botón central
     function truncateText(text, maxWidth, canvasCtx) {
       let width = canvasCtx.measureText(text).width;
       if (width <= maxWidth) return text;
@@ -1318,7 +1934,7 @@
       return text + ellipsis;
     }
 
-    // Dibujar la ruleta en el Canvas
+    // Dibujar la ruleta completa en el Canvas
     function drawRoulette() {
       const dpr = window.devicePixelRatio || 1;
       const size = canvas.width / dpr;
@@ -1329,16 +1945,16 @@
       ctx.clearRect(0, 0, size, size);
 
       if (options.length === 0) {
-        // Círculo base de indicador de carga
+        // Estado vacío: círculo base
         ctx.beginPath();
         ctx.arc(centerX, centerY, radius, 0, 2 * Math.PI);
-        ctx.fillStyle = '#1b1c26';
+        ctx.fillStyle = '#151518';
         ctx.fill();
-        ctx.strokeStyle = 'rgba(255,255,255,0.06)';
+        ctx.strokeStyle = 'rgba(255,255,255,0.05)';
         ctx.lineWidth = 4;
         ctx.stroke();
 
-        ctx.fillStyle = '#6b7280';
+        ctx.fillStyle = '#5a5a6e';
         ctx.font = '15px Inter, sans-serif';
         ctx.textAlign = 'center';
         ctx.textBaseline = 'middle';
@@ -1352,7 +1968,7 @@
         const startAngle = currentAngle + i * arc;
         const endAngle = startAngle + arc;
 
-        // Dibujar rebanada
+        // Dibujar segmento
         ctx.beginPath();
         ctx.moveTo(centerX, centerY);
         ctx.arc(centerX, centerY, radius, startAngle, endAngle);
@@ -1361,12 +1977,12 @@
         ctx.fillStyle = colors[i];
         ctx.fill();
 
-        // Línea divisoria sutil
-        ctx.strokeStyle = '#15161e';
+        // Línea divisoria
+        ctx.strokeStyle = '#111113';
         ctx.lineWidth = options.length > 30 ? 1 : 2.5;
         ctx.stroke();
 
-        // Renderizar Texto en sentido radial
+        // Texto radial
         ctx.save();
         ctx.translate(centerX, centerY);
         ctx.rotate(startAngle + arc / 2);
@@ -1374,7 +1990,7 @@
         ctx.textBaseline = 'middle';
         ctx.fillStyle = '#ffffff';
 
-        // Escalar tamaño de fuente dinámicamente según cantidad de segmentos
+        // Escalar fuente dinámicamente
         let fontSize = 16;
         if (options.length > 25) fontSize = 9;
         else if (options.length > 18) fontSize = 11;
@@ -1382,7 +1998,6 @@
 
         ctx.font = `bold ${fontSize}px Outfit, sans-serif`;
 
-        // Calcular espacio disponible del texto sin colisionar con el botón central (radio 40px)
         const availableWidth = radius - 70;
         const text = truncateText(options[i], availableWidth, ctx);
 
@@ -1390,7 +2005,7 @@
         ctx.restore();
       }
 
-      // Dibujar borde externo decorativo
+      // Borde externo decorativo
       ctx.beginPath();
       ctx.arc(centerX, centerY, radius, 0, 2 * Math.PI);
       ctx.strokeStyle = 'rgba(255, 255, 255, 0.06)';
@@ -1399,21 +2014,21 @@
 
       ctx.beginPath();
       ctx.arc(centerX, centerY, radius + 2, 0, 2 * Math.PI);
-      ctx.strokeStyle = '#2a2d3d';
+      ctx.strokeStyle = '#1f1f25';
       ctx.lineWidth = 1.5;
       ctx.stroke();
 
-      // Dibujar círculo interno decorativo detrás del botón central
+      // Círculo interno detrás del botón central
       ctx.beginPath();
       ctx.arc(centerX, centerY, 43, 0, 2 * Math.PI);
-      ctx.fillStyle = '#15161e';
+      ctx.fillStyle = '#111113';
       ctx.fill();
-      ctx.strokeStyle = 'rgba(255,255,255,0.06)';
+      ctx.strokeStyle = 'rgba(255,255,255,0.05)';
       ctx.lineWidth = 2;
       ctx.stroke();
     }
 
-    // Ajustar resolución del Canvas para densidad Retina
+    // Ajustar resolución del Canvas para pantallas Retina
     function resizeCanvas() {
       const parent = canvas.parentElement;
       const size = Math.floor(parent.getBoundingClientRect().width);
@@ -1430,16 +2045,15 @@
       drawRoulette();
     }
 
-    // Sincronizar datos del Textarea con el estado
+    // Sincronizar datos del textarea con el estado
     function updateFromTextarea() {
       const val = textarea.value;
-      
-      // Separar por líneas y filtrar vacías
+
       allOptions = val.split('\n')
                       .map(opt => opt.trim())
                       .filter(opt => opt.length > 0);
 
-      // Limpiar opciones ocultas que ya no existen en la lista principal
+      // Limpiar opciones ocultas que ya no existen
       const currentAllOptionsSet = new Set(allOptions);
       for (const opt of disabledOptions) {
         if (!currentAllOptionsSet.has(opt)) {
@@ -1447,31 +2061,27 @@
         }
       }
 
-      // Filtrar las opciones activas
+      // Filtrar opciones activas
       options = allOptions.filter(opt => !disabledOptions.has(opt));
 
-      // Guardar en LocalStorage
+      // Persistir en localStorage
       localStorage.setItem('ruleta_opciones', val);
       localStorage.setItem('ruleta_ocultas', JSON.stringify([...disabledOptions]));
 
-      // Actualizar contadores en la pestaña
+      // Actualizar contadores
       if (activeCountSpan && totalCountSpan) {
         activeCountSpan.textContent = options.length;
         totalCountSpan.textContent = allOptions.length;
       }
 
-      // Generar colores y redibujar
+      // Redibujar
       generateContrastColors(options.length);
       drawRoulette();
-
-      // Habilitar/Deshabilitar botón
       spinButton.disabled = options.length === 0;
-
-      // Renderizar el checklist de descarte
       renderChecklist();
     }
 
-    // Renderizar la lista de casillas para ocultar/activar opciones
+    // Renderizar la lista de casillas para ocultar/activar
     function renderChecklist() {
       if (!checklistContainer) return;
       checklistContainer.innerHTML = '';
@@ -1489,7 +2099,7 @@
 
         const item = document.createElement('div');
         item.className = `checklist-item${isEnabled ? '' : ' disabled'}`;
-        
+
         const checkbox = document.createElement('input');
         checkbox.type = 'checkbox';
         checkbox.checked = isEnabled;
@@ -1501,7 +2111,6 @@
         item.appendChild(checkbox);
         item.appendChild(label);
 
-        // Permitir hacer clic en todo el elemento para mayor accesibilidad y comodidad
         item.addEventListener('click', (e) => {
           if (e.target === checkbox) return;
           checkbox.checked = !checkbox.checked;
@@ -1516,7 +2125,7 @@
       });
     }
 
-    // Activar o desactivar opción
+    // Activar o desactivar una opción específica
     function toggleOption(opt, isEnabled, itemElement) {
       if (isEnabled) {
         disabledOptions.delete(opt);
@@ -1526,19 +2135,17 @@
         itemElement.classList.add('disabled');
       }
 
-      // Recalcular y actualizar opciones activas
       options = allOptions.filter(o => !disabledOptions.has(o));
       localStorage.setItem('ruleta_ocultas', JSON.stringify([...disabledOptions]));
 
       if (activeCountSpan) activeCountSpan.textContent = options.length;
-      
+
       generateContrastColors(options.length);
       drawRoulette();
-      
       spinButton.disabled = options.length === 0;
     }
 
-    // Permitir edición interactiva del título de la ruleta
+    // Edición interactiva del título de la ruleta
     function editTitle() {
       if (isSpinning) return;
       const currentTitle = wheelTitleText.textContent.trim();
@@ -1555,29 +2162,27 @@
     function updateSpin() {
       if (!isSpinning) return;
 
-      // Decremento de velocidad exponencial (simulación de fricción)
-      const friction = 0.984; 
+      const friction = 0.984;
       currentAngle += spinVelocity;
       spinVelocity *= friction;
 
-      // Calcular tick físico al pasar segmentos
+      // Detectar cambio de segmento para tick
       if (options.length > 0) {
         const arc = (2 * Math.PI) / options.length;
-        const pointerAngle = 1.5 * Math.PI; // Puntero arriba (12 en reloj)
-        
-        // Determinar qué segmento pasa por el puntero
+        const pointerAngle = 1.5 * Math.PI;
+
         const normalizedAngle = (currentAngle % (2 * Math.PI) + 2 * Math.PI) % (2 * Math.PI);
         const wheelAngleAtPointer = (pointerAngle - normalizedAngle + 4 * Math.PI) % (2 * Math.PI);
         const currentSegmentIndex = Math.floor(wheelAngleAtPointer / arc);
 
         if (currentSegmentIndex !== lastTickSegmentIndex) {
           playTickSound();
-          pointerTilt = -18; // Desviar la flechita física
+          pointerTilt = -18;
           lastTickSegmentIndex = currentSegmentIndex;
         }
       }
 
-      // Desaceleración y amortiguación del puntero ( wiggle decay )
+      // Amortiguación del puntero
       pointerTilt *= 0.85;
       wheelPointer.style.transform = `translateX(-50%) translateY(0) rotate(${pointerTilt}deg)`;
 
@@ -1588,11 +2193,8 @@
         isSpinning = false;
         spinButton.disabled = false;
         spinButton.textContent = 'GIRAR';
-        
-        // Enderezar puntero
-        wheelPointer.style.transform = `translateX(-50%) translateY(0) rotate(0deg)`;
 
-        // Declarar ganador
+        wheelPointer.style.transform = `translateX(-50%) translateY(0) rotate(0deg)`;
         announceWinner();
       } else {
         requestAnimationFrame(updateSpin);
@@ -1605,10 +2207,8 @@
 
       initAudio();
 
-      // Soporte a accesibilidad para evitar ataques epilépticos o molestias visuales
       const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
       if (prefersReducedMotion) {
-        // En caso de solicitar movimiento reducido, resolvemos instantáneamente
         currentAngle = Math.random() * 2 * Math.PI;
         drawRoulette();
         announceWinner();
@@ -1619,64 +2219,56 @@
       spinButton.disabled = true;
       spinButton.textContent = 'GIRANDO';
 
-      // Velocidad inicial aleatoria
-      spinVelocity = 0.35 + Math.random() * 0.25; 
+      spinVelocity = 0.35 + Math.random() * 0.25;
       lastTickSegmentIndex = -1;
 
       requestAnimationFrame(updateSpin);
     }
 
-    // Procesar y mostrar el ganador
+    // Procesar y mostrar al ganador
     function announceWinner() {
       if (options.length === 0) return;
 
       const arc = (2 * Math.PI) / options.length;
       const pointerAngle = 1.5 * Math.PI;
-      
+
       const normalizedAngle = (currentAngle % (2 * Math.PI) + 2 * Math.PI) % (2 * Math.PI);
       const wheelAngleAtPointer = (pointerAngle - normalizedAngle + 4 * Math.PI) % (2 * Math.PI);
       const winnerIndex = Math.floor(wheelAngleAtPointer / arc);
-      
+
       const winner = options[winnerIndex];
 
-      // Actualizar lector de pantalla
       srAnnouncer.textContent = `Resultado del sorteo: ${winner}`;
 
-      // Mostrar modal
       winnerDisplay.textContent = winner;
       winnerModal.classList.add('active');
       winnerModal.setAttribute('aria-hidden', 'false');
 
-      // Iniciar confeti
       confetti.start();
       playWinnerSound();
-
-      // Poner el foco en el botón del modal para accesibilidad de teclado
       modalCloseBtn.focus();
     }
 
-    // Cerrar modal de resultados
+    // Cerrar modal
     function closeModal() {
       winnerModal.classList.remove('active');
       winnerModal.setAttribute('aria-hidden', 'true');
       confetti.stop();
-      spinButton.focus(); // Retorna el foco al botón de juego
+      spinButton.focus();
     }
 
-    // Mezclar las opciones (Fisher-Yates)
+    // Mezclar opciones (Fisher-Yates)
     function shuffleOptions() {
       if (isSpinning) return;
       const lines = textarea.value.split('\n').filter(opt => opt.trim().length > 0);
-      
+
       for (let i = lines.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
         [lines[i], lines[j]] = [lines[j], lines[i]];
       }
-      
+
       textarea.value = lines.join('\n');
       updateFromTextarea();
-      
-      // Pequeño guiño de sonido al mezclar
       playTickSound();
     }
 
@@ -1690,10 +2282,9 @@
     }
 
     // ==========================================================
-    // CONFIGURACIÓN DE CONTROLES E INTERFAZ (AUDIO & FOCO TDAH)
+    // CONFIGURACIÓN DE CONTROLES DE INTERFAZ
     // ==========================================================
 
-    // Inicializar estados visuales de los botones
     function initUIState() {
       // Estado de sonido
       if (soundEnabled) {
@@ -1701,7 +2292,7 @@
         soundToggleBtn.querySelector('.btn-icon').textContent = '🔊';
         soundToggleBtn.setAttribute('aria-pressed', 'true');
       } else {
-        soundToggleBtn.classList.add('active'); // en este diseño, 'active' indica silenciado/presionado
+        soundToggleBtn.classList.add('active');
         soundToggleBtn.querySelector('.btn-icon').textContent = '🔇';
         soundToggleBtn.setAttribute('aria-pressed', 'false');
       }
@@ -1723,19 +2314,15 @@
       soundEnabled = !soundEnabled;
       localStorage.setItem('ruleta_sound', soundEnabled);
       initUIState();
-      
-      // Probar sonido al activar
-      if (soundEnabled) {
-        playTickSound();
-      }
+      if (soundEnabled) playTickSound();
     });
 
-    // Toggle de Modo Foco (TDAH)
+    // Toggle de Modo Foco
     focusToggleBtn.addEventListener('click', () => {
       focusModeEnabled = !focusModeEnabled;
       localStorage.setItem('ruleta_focus', focusModeEnabled);
       initUIState();
-      resizeCanvas(); // Ajustar el canvas al nuevo contenedor centrado
+      resizeCanvas();
     });
 
     // Cambio de pestañas
@@ -1745,7 +2332,6 @@
       tabEdit.setAttribute('aria-selected', 'true');
       tabManage.classList.remove('active');
       tabManage.setAttribute('aria-selected', 'false');
-      
       tabEditContent.classList.remove('hidden');
       tabManageContent.classList.add('hidden');
     });
@@ -1756,15 +2342,12 @@
       tabManage.setAttribute('aria-selected', 'true');
       tabEdit.classList.remove('active');
       tabEdit.setAttribute('aria-selected', 'false');
-      
       tabManageContent.classList.remove('hidden');
       tabEditContent.classList.add('hidden');
-      
-      // Renderizar el checklist para asegurar que esté al día
       renderChecklist();
     });
 
-    // Controladores de edición de título
+    // Edición de título
     wheelTitleText.addEventListener('click', editTitle);
     editTitleBtn.addEventListener('click', editTitle);
 
@@ -1772,44 +2355,37 @@
     // CONTROLADORES DE EVENTOS
     // ==========================================================
 
-    // Escuchador de entrada del textarea
     textarea.addEventListener('input', updateFromTextarea);
-
-    // Botones del panel
     spinButton.addEventListener('click', startSpin);
     shuffleBtn.addEventListener('click', shuffleOptions);
     clearBtn.addEventListener('click', clearOptions);
-    
-    // Botón Activar Todas
+
+    // Activar Todas las opciones ocultas
     activateAllBtn.addEventListener('click', () => {
       if (isSpinning || disabledOptions.size === 0) return;
       disabledOptions.clear();
-      
-      // Recalcular y actualizar
       options = [...allOptions];
       localStorage.setItem('ruleta_ocultas', JSON.stringify([]));
 
       if (activeCountSpan) activeCountSpan.textContent = options.length;
-      
+
       generateContrastColors(options.length);
       drawRoulette();
       spinButton.disabled = options.length === 0;
-      
-      // Re-renderizar la lista
       renderChecklist();
     });
-    
+
     // Modal
     modalCloseBtn.addEventListener('click', closeModal);
-    
-    // Teclas rápidas para accesibilidad (Cerrar modal con Esc)
+
+    // Cerrar modal con Esc
     window.addEventListener('keydown', (e) => {
       if (e.key === 'Escape' && winnerModal.classList.contains('active')) {
         closeModal();
       }
     });
 
-    // Redimensionado global de ventana
+    // Redimensionado
     window.addEventListener('resize', () => {
       resizeCanvas();
       if (confetti.active) confetti.resize();
@@ -1846,15 +2422,14 @@
       } else {
         textarea.value = DEFAULT_OPTIONS.join('\n');
       }
-      
+
       initUIState();
       updateFromTextarea();
       resizeCanvas();
-      
-      // Pequeño retardo para asegurar correcta carga del tamaño del canvas en dispositivos lentos
+
+      // Retardo para correcta carga del canvas en dispositivos lentos
       setTimeout(resizeCanvas, 200);
     });
-
   </script>
 </body>
 </html>
