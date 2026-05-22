@@ -2046,6 +2046,11 @@
     // Ajustar resolución del Canvas para pantallas Retina
     function resizeCanvas() {
       const parent = canvas.parentElement;
+      
+      // Limpiar estilos inline para permitir que el contenedor se encoja fluidamente
+      canvas.style.width = '';
+      canvas.style.height = '';
+
       const size = Math.floor(parent.getBoundingClientRect().width);
       const dpr = window.devicePixelRatio || 1;
 

@@ -1288,17 +1288,22 @@
       const result = Math.random() < 0.5 ? 'Cara' : 'Cruz';
 
       // 4. Calcular los giros 3D aleatorios acumulativos
-      // Generamos entre 5 y 9 vueltas completas sobre el eje Y y Y para dar sensación caótica
+      // Generamos entre 5 y 9 vueltas completas sobre el eje X e Y para dar sensación caótica
       const spinsX = Math.floor(Math.random() * 4) + 6; // 6 a 9 giros
       const spinsY = Math.floor(Math.random() * 4) + 6; // 6 a 9 giros
 
-      // Cara (C) finaliza en un múltiplo par de 180° en el eje Y (0, 360, 720...)
+      // Cara (C) finaliza en un múltiplo de 360° en el eje Y (0, 360, 720...)
       // Cruz (X) finaliza en un múltiplo impar de 180° en el eje Y (180, 540, 900...)
-      let extraY = (result === 'Cruz') ? 180 : 0;
+      const targetModY = (result === 'Cruz') ? 180 : 0;
+      const currentModY = currentRotationY % 360;
       
-      // La rotación en X puede terminar en 360° para mantener la moneda totalmente plana frontalmente
-      let targetX = currentRotationX + (spinsX * 360);
-      let targetY = currentRotationY + (spinsY * 360) + extraY;
+      // Ajustamos targetY de modo que targetY % 360 sea exactamente targetModY
+      // y que gire hacia adelante por lo menos spinsY * 360 grados
+      let targetY = currentRotationY + (spinsY * 360) + (targetModY - currentModY);
+      
+      // Garantizar que la rotación en X termine exactamente alineada plana (múltiplo de 360°)
+      const currentModX = currentRotationX % 360;
+      let targetX = currentRotationX + (spinsX * 360) - currentModX;
 
       // Actualizar valores de rotación actuales
       currentRotationX = targetX;
@@ -1316,12 +1321,13 @@
         // Reproducir sonido metálico de parada
         playLandSound();
 
-        // Mostrar el resultado final con animación de entrada
-        const formattedResult = result === 'Cara' 
-          ? `<span class="cyan">¡Ha salido CARA!</span>` 
-          : `<span class="purple">¡Ha salido CRUZ!</span>`;
-        
-        resultDisplay.innerHTML = formattedResult;
+        // Mostrar el resultado final con animación de entrada usando textContent
+        // de forma atómica y segura para evitar desajustes
+        resultDisplay.innerHTML = '';
+        const span = document.createElement('span');
+        span.className = result === 'Cara' ? 'cyan' : 'purple';
+        span.textContent = result === 'Cara' ? '¡Ha salido CARA!' : '¡Ha salido CRUZ!';
+        resultDisplay.appendChild(span);
         resultDisplay.classList.add('show');
 
         // Agregar al historial
