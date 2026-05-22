@@ -221,20 +221,20 @@ function initDados() {
                   <stop offset="100%" stop-color="#b366ff" />
                 </linearGradient>
                 <linearGradient id="d20-grad-side-${i}" x1="0%" y1="0%" x2="100%" y2="100%">
-                  <stop offset="0%" stop-color="#181335" />
-                  <stop offset="100%" stop-color="#0d081f" />
+                  <stop offset="0%" stop-color="#372880" />
+                  <stop offset="100%" stop-color="#1f144d" />
                 </linearGradient>
               </defs>
-              <polygon points="50,32 76,68 24,68" fill="url(#d20-grad-central-${i})" stroke="#0a0a0f" stroke-width="0.8" stroke-linejoin="round"/>
-              <polygon points="50,2 91.6,26 50,32" fill="url(#d20-grad-side-${i})" stroke="#0a0a0f" stroke-width="0.8" stroke-linejoin="round"/>
-              <polygon points="50,2 50,32 8.4,26" fill="url(#d20-grad-side-${i})" stroke="#0a0a0f" stroke-width="0.8" stroke-linejoin="round"/>
-              <polygon points="8.4,26 50,32 24,68" fill="url(#d20-grad-side-${i})" stroke="#0a0a0f" stroke-width="0.8" stroke-linejoin="round"/>
-              <polygon points="8.4,26 24,68 8.4,74" fill="url(#d20-grad-side-${i})" stroke="#0a0a0f" stroke-width="0.8" stroke-linejoin="round"/>
-              <polygon points="24,68 8.4,74 50,98" fill="url(#d20-grad-side-${i})" stroke="#0a0a0f" stroke-width="0.8" stroke-linejoin="round"/>
-              <polygon points="76,68 50,98 91.6,74" fill="url(#d20-grad-side-${i})" stroke="#0a0a0f" stroke-width="0.8" stroke-linejoin="round"/>
-              <polygon points="76,68 91.6,74 91.6,26" fill="url(#d20-grad-side-${i})" stroke="#0a0a0f" stroke-width="0.8" stroke-linejoin="round"/>
-              <polygon points="50,32 76,68 91.6,26" fill="url(#d20-grad-side-${i})" stroke="#0a0a0f" stroke-width="0.8" stroke-linejoin="round"/>
-              <polygon points="24,68 76,68 50,98" fill="url(#d20-grad-side-${i})" stroke="#0a0a0f" stroke-width="0.8" stroke-linejoin="round"/>
+              <polygon points="50,32 76,68 24,68" fill="url(#d20-grad-central-${i})" stroke="rgba(0, 229, 255, 0.55)" stroke-width="1" stroke-linejoin="round"/>
+              <polygon points="50,2 91.6,26 50,32" fill="url(#d20-grad-side-${i})" stroke="rgba(179, 102, 255, 0.45)" stroke-width="0.9" stroke-linejoin="round"/>
+              <polygon points="50,2 50,32 8.4,26" fill="url(#d20-grad-side-${i})" stroke="rgba(179, 102, 255, 0.45)" stroke-width="0.9" stroke-linejoin="round"/>
+              <polygon points="8.4,26 50,32 24,68" fill="url(#d20-grad-side-${i})" stroke="rgba(179, 102, 255, 0.45)" stroke-width="0.9" stroke-linejoin="round"/>
+              <polygon points="8.4,26 24,68 8.4,74" fill="url(#d20-grad-side-${i})" stroke="rgba(179, 102, 255, 0.45)" stroke-width="0.9" stroke-linejoin="round"/>
+              <polygon points="24,68 8.4,74 50,98" fill="url(#d20-grad-side-${i})" stroke="rgba(179, 102, 255, 0.45)" stroke-width="0.9" stroke-linejoin="round"/>
+              <polygon points="76,68 50,98 91.6,74" fill="url(#d20-grad-side-${i})" stroke="rgba(179, 102, 255, 0.45)" stroke-width="0.9" stroke-linejoin="round"/>
+              <polygon points="76,68 91.6,74 91.6,26" fill="url(#d20-grad-side-${i})" stroke="rgba(179, 102, 255, 0.45)" stroke-width="0.9" stroke-linejoin="round"/>
+              <polygon points="50,32 76,68 91.6,26" fill="url(#d20-grad-side-${i})" stroke="rgba(179, 102, 255, 0.45)" stroke-width="0.9" stroke-linejoin="round"/>
+              <polygon points="24,68 76,68 50,98" fill="url(#d20-grad-side-${i})" stroke="rgba(179, 102, 255, 0.45)" stroke-width="0.9" stroke-linejoin="round"/>
               <text x="50" y="59" class="d20-number" id="d20-number-${i}" text-anchor="middle" dominant-baseline="central">20</text>
             </svg>
           </div>
