@@ -82,6 +82,11 @@ const schemaLD = {
             return (
               <article class={`blog-card reveal-scale ${delayClass}`}>
                 <a href={`/blog/${post.id}`} class="blog-card-link">
+                  {post.data.heroImage && (
+                    <div class="blog-card-image">
+                      <img src={post.data.heroImage} alt={post.data.title} loading="lazy" />
+                    </div>
+                  )}
                   <div class="blog-card-content">
                     <div class="blog-card-meta">
                       <time datetime={post.data.pubDate.toISOString()}>{formattedDate}</time>
@@ -274,10 +279,32 @@ const schemaLD = {
     transform: translateX(3px);
   }
 
+  .blog-card-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border-bottom: 1px solid var(--card-border);
+    position: relative;
+  }
+
+  .blog-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .blog-card:hover .blog-card-image img {
+    transform: scale(1.05);
+  }
+
   /* Responsive overrides */
   @media (max-width: 480px) {
     .blog-card-content {
       padding: 1.5rem;
+    }
+    .blog-card-image {
+      height: 160px;
     }
   }
 </style>
